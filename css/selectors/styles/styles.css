@@ -3,10 +3,12 @@ div {
     color: blue;
   }
 
+
 /* Class selector */
 .alert-text {
     color: red;
 }
+
 
 /* ID selector */
 #title {
@@ -24,5 +26,19 @@ div {
 }
 
 .unread {
+  color: yellow;
+}
+
+
+/* Chaining Selector */
+.subsection {
+  background-color: blueviolet;
+}
+
+.subsection.header {
+  color: red;
+}
+
+.subsection#preview {
   color: yellow;
 }

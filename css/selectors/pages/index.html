@@ -26,10 +26,13 @@
     <!-- Notice how the text is blue. That is because of our universal selector. -->
     <div id="title">My Awesome 90's Page</div>
 
-    <!-- Grouping selector: Reduce repetition, by chaining .unread & .read together. -->
-    <!-- Both make the background black, but .read makes the text white and .unread makes it yellow. -->
-    <div class="unread">This is unread!</div>
-    <div class="read">This is read!</div>
+    <!-- Grouping selector: Reduce repetition by grouping .unread & .read together. -->
+    <div class="unread">This is unread!</div>  <!-- Make background black & text white -->
+    <div class="read">This is read!</div>      <!-- Make background black & text yellow -->
+
+    <!-- Chaining selector: Chain classes as a list without any separation. -->
+    <div class="subsection header">Latest Posts</div>
+    <p class="subsection" id="preview">This is where a preview for a post might go.</p>
 </body>
 
 </html>
