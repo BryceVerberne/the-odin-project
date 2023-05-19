@@ -4,28 +4,28 @@ div {
 }
 
 /* Define different HEX colors */
-.red {
+.hexRed {
     background-color: #ff0000;
 }
 
-.green {
+.hexGreen {
     background-color: #00ff00;
 }
 
-.blue {
+.hexBlue {
     background-color: #0000ff;
 }
 
 
 /* Define different HEX colors with transparency */
-.transparentRed {
+.hexTransRed {
     background-color: #ff000080;
 }
 
-.transparentGreen {
+.hexTransGreen {
     background-color: #00ff0080;
 }
 
-.transparentBlue {
+.hexTransBlue {
     background-color: #0000ff80;
 }
