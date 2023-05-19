@@ -28,6 +28,6 @@ If you have any questions, suggestions, or simply want to connect, feel free to 
 
 ## License
 
-This repository is licensed under the MIT License - see the LICENSE file for details.
+This repository is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 **Good luck and happy coding!**
