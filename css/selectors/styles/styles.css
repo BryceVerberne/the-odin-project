@@ -12,3 +12,17 @@ div {
 #title {
   background-color: green;
 }
+
+/* Grouping selector */
+.read,
+.unread {
+  background-color: black;
+}
+
+.read {
+  color: white;
+}
+
+.unread {
+  color: yellow;
+}
