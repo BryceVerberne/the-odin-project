@@ -2,3 +2,8 @@
 div {
     color: blue;
   }
+
+/* Class selector example */
+.alert-text {
+    color: red;
+}
