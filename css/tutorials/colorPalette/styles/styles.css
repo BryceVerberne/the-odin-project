@@ -38,3 +38,13 @@ div {
 .rgbTransColor {
     background-color: rgba(100, 0, 127, 0.3);
 }
+
+
+/* Create random solid & transparent color using HSL */
+.hslColor {
+    background-color: hsl(15, 82%, 56%);
+}
+
+.hslTransColor {
+    background-color: hsl(15, 82%, 56%, 0.3);
+}
