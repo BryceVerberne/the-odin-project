@@ -16,7 +16,6 @@ div {
     background-color: #0000ff;
 }
 
-
 /* Define different HEX colors with transparency */
 .hexTransRed {
     background-color: #ff000080;
@@ -28,4 +27,14 @@ div {
 
 .hexTransBlue {
     background-color: #0000ff80;
+}
+
+
+/* Create random solid & transparent color using RGB */
+.rgbColor {
+    background-color: rgb(100, 0, 127);
+}
+
+.rgbTransColor {
+    background-color: rgba(100, 0, 127, 0.3);
 }
