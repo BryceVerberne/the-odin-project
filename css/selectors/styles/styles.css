@@ -3,7 +3,12 @@ div {
     color: blue;
   }
 
-/* Class selector example */
+/* Class selector */
 .alert-text {
     color: red;
+}
+
+/* ID selector */
+#title {
+  background-color: green;
 }
