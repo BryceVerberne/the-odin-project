@@ -42,3 +42,17 @@ div {
 .subsection#preview {
   color: yellow;
 }
+
+
+/* Descendant Combinator */
+.ancestor {
+  color:aquamarine;
+}
+
+.child {
+  color:bisque;
+}
+
+.ancestor .child {
+  background-color: brown;
+}

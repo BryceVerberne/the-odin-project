@@ -33,6 +33,21 @@
     <!-- Chaining selector: Chain classes as a list without any separation. -->
     <div class="subsection header">Latest Posts</div>
     <p class="subsection" id="preview">This is where a preview for a post might go.</p>
+
+    <!-- Descendant Combinator: Combine selectors to exhibit relationships. -->
+    <div class="ancestor"> <!-- Only appears aquamarine since there is no nesting. -->
+        There is no nesting; therefore, there is no background text.
+
+        <div class="child">
+            This class is nested in 'ancestor' so it has a brown background.
+            <div class ="ancestor">
+                Nesting again, except we are using the 'ancestor' text color.
+            </div>
+        </div>
+    </div>
+
+    <div class="child">No nesting = no brown background.</div>
+
 </body>
 
 </html>
