@@ -1,0 +1,31 @@
+/* Define universal selector */
+div {
+    color: white;
+}
+
+/* Define different HEX colors */
+.red {
+    background-color: #ff0000;
+}
+
+.green {
+    background-color: #00ff00;
+}
+
+.blue {
+    background-color: #0000ff;
+}
+
+
+/* Define different HEX colors with transparency */
+.transparentRed {
+    background-color: #ff000080;
+}
+
+.transparentGreen {
+    background-color: #00ff0080;
+}
+
+.transparentBlue {
+    background-color: #0000ff80;
+}
