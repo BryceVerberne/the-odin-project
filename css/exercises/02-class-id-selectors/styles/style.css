@@ -18,3 +18,11 @@
 .oddWithFont {
     font-size: 24px;
 }
+
+/* The Fourth Element: ID Selector */
+/* A light green background, a font size of 24px, and bold. */
+#secondID {
+    background-color: green;
+    font-size: 24px;
+    font-weight: bold;
+}
