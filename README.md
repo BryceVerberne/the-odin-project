@@ -1,4 +1,4 @@
-# Web Development Learning
+# The Odin Project
 
 Hello, world! Welcome to my web development learning repository. As I journey through the realms of web development, I'll be documenting my progress here. This repository is my sandbox where I'll be experimenting with HTML, CSS, JavaScript, and Node.js.
 
