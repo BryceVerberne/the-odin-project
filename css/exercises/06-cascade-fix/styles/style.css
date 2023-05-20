@@ -1,3 +1,8 @@
+/*
+  Changes:
+   - Switch `para` & `small-para` due to rule order. 
+*/
+
 body{
   font-family:Arial, Helvetica, sans-serif
 }
@@ -8,13 +13,12 @@ body{
   font-weight: 800;
 }
 
-.small-para {
-  font-size: 14px;
-  font-weight: 800;
-}
-
 .para {
   font-size: 22px;
+}
+
+.small-para {
+  font-size: 14px;
 }
 
 .confirm {
@@ -40,3 +44,7 @@ div.text {
   font-size: 22px;
   font-weight: 100;
 }
+
+/* TODO: Add missing ID, `confirm-button` */
+
+/* TODO: Add missing ID, `cancel-button` */
