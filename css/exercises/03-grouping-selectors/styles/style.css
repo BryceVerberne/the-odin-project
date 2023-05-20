@@ -12,3 +12,9 @@
     background-color: black;
     color: white;
 }
+
+/* The Second Element: Class Selector */
+/* A Yellow Background */
+.secondElement {
+    background-color: yellow;
+}
