@@ -1,13 +1,20 @@
-/* All Odd-Numbered Elements */
+/* All Odd-Numbered Elements: Grouping Selector*/
 /* A light red/pink background, and a list of fonts containing `Verdana` and `DejaVu Sans` with `sans-serif` as a fallback. */
-.oddNumbered {
+.oddNumbered,
+.oddWithFont {
     background-color: red; /* TODO: Change to RGB, HEX, or HSL */
     font-family: Verdana, "DejaVu Sans", sans-serif;
 }
 
-/* The Second Element */
+/* The Second Element: ID Selector */
 /* Blue text and a font size of 36px. */
 #firstID {
     color: blue; /* TODO: Change to RGB, HEX, or HSL */
     font-size: 36px;
+}
+
+/* The Third Element: Class Selector */
+/* In addition to `.oddNumbered`, add a font size of 24px */
+.oddWithFont {
+    font-size: 24px;
 }
