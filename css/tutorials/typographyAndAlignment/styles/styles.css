@@ -1,0 +1,5 @@
+/* Set all paragraphs to Times New Roman */
+p {
+    font-family: sans-serif;
+    font-size: 18px;
+}
