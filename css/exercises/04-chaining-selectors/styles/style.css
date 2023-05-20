@@ -1,0 +1,21 @@
+/* 
+    This CSS class represents an avatar element with a proportioned size.
+
+    The width is set to 300 pixels, while the height adjusts automatically
+    to maintain the aspect ratio of the image.
+*/
+.avatar.proportioned {
+    width: 300px;
+    height: auto;
+}
+
+/* 
+    This CSS class represents an avatar element with a distorted size.
+
+    The width is set to 200 pixels, while the height is set to 400 pixels,
+    causing the image to appear distorted.
+*/
+.avatar.distorted {
+    width: 200px;
+    height: 400px;
+}
