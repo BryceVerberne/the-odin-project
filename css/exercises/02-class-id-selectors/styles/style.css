@@ -1,0 +1,5 @@
+/* A light red/pink background, and a list of fonts containing `Verdana` and `DejaVu Sans` with `sans-serif` as a fallback */
+.oddNumbered {
+    background-color: red;
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
