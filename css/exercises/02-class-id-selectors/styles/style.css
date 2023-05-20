@@ -1,5 +1,13 @@
-/* A light red/pink background, and a list of fonts containing `Verdana` and `DejaVu Sans` with `sans-serif` as a fallback */
+/* All Odd-Numbered Elements */
+/* A light red/pink background, and a list of fonts containing `Verdana` and `DejaVu Sans` with `sans-serif` as a fallback. */
 .oddNumbered {
-    background-color: red;
+    background-color: red; /* TODO: Change to RGB, HEX, or HSL */
     font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+
+/* The Second Element */
+/* Blue text and a font size of 36px. */
+#firstID {
+    color: blue; /* TODO: Change to RGB, HEX, or HSL */
+    font-size: 36px;
 }
