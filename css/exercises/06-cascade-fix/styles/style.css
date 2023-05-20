@@ -1,10 +1,12 @@
 /*
   Changes:
    - Switch `para` & `small-para` due to rule order. 
+   - Change the `confirm` class to the `confirm-button` ID due to specificity.
+   - Switch `text` & `child` due to rule order.
 */
 
 body{
-  font-family:Arial, Helvetica, sans-serif
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .para,
@@ -21,7 +23,7 @@ body{
   font-size: 14px;
 }
 
-.confirm {
+#confirm-button {
   background: green;
   color: white;
   font-weight: bold;
@@ -33,18 +35,14 @@ body{
   font-size: 20px;
 }
 
-.child {
-  color: rgb(0, 0, 0);
-  font-weight: 800;
-  font-size: 14px;
-}
-
-div.text {
+.text {
   color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: 100;
 }
 
-/* TODO: Add missing ID, `confirm-button` */
-
-/* TODO: Add missing ID, `cancel-button` */
+.child {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
+}
