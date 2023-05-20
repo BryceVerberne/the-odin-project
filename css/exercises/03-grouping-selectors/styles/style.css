@@ -1,0 +1,7 @@
+/* Both Elements: Grouping Selector */
+/*  A font size of 28px and a list of fonts containing Helvetica and Times New Roman, with sans-serif as a fallback */
+.firstElement,
+.secondElement {
+    font-size: 28px;
+    font-family: Helvetica, 'Times New Roman', sans-serif;
+}
