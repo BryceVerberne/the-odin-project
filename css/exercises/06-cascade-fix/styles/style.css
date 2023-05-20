@@ -5,42 +5,65 @@
    - Switch `text` & `child` due to rule order.
 */
 
-body{
+/* Set the default font family for the entire body of the website. */
+body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* 
+  Both .para and .small-para classes are used for paragraph text. 
+  They share the same color and font-weight.
+*/
 .para,
 .small-para {
-  color: hsl(0, 0%, 0%);
-  font-weight: 800;
+  color: hsl(0, 0%, 0%);  /* Black color */
+  font-weight: 800;  /* Bold text */
 }
 
+/* The .para class sets the font size for regular paragraphs. */
 .para {
   font-size: 22px;
 }
 
+/* The .small-para class sets the font size for smaller paragraphs. */
 .small-para {
   font-size: 14px;
 }
 
+/* 
+  #confirm-button is the ID for the confirmation button on the website. 
+  Its style is defined by the green background, white text color, and bold font-weight.
+*/
 #confirm-button {
   background: green;
   color: white;
   font-weight: bold;
 } 
 
+/* 
+  The .button class is used to style button elements on the website. 
+  The default background color is white, text color is black, and font size is 20px.
+*/
 .button {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  font-size: 20px;
+  background-color: rgb(255, 255, 255);  /* White background color */
+  color: rgb(0, 0, 0);  /* Black text color */
+  font-size: 20px;  /* Font size */
 }
 
+/* 
+  The .text class is for generic text blocks on the webpage, 
+  with specific color, font-size, and font-weight.
+*/
 .text {
   color: rgb(0, 0, 0);
   font-size: 22px;
   font-weight: 100;
 }
 
+/* 
+  The .child class is for child elements in a parent container. 
+  The text color is black, the font weight is bold, and the font size is 14px.
+*/
 .child {
   color: rgb(0, 0, 0);
   font-weight: 800;
