@@ -1,11 +1,13 @@
-/* Set all <p> tags to sans-serif & 18px */
+/* Set family, size, and weight */
 p {
-    font-family: sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 18px;
+    font-weight: 100; /* This number can be from 1 to 1000 */
 }
 
-/* Set <h1> tags to be in monospace & 30px */
+/* Set family, size, and center-align text */
 h1 {
-    font-family: monospace;
-    font-size: 30px
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
 }
