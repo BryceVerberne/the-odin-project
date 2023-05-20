@@ -2,14 +2,14 @@
 /* A light red/pink background, and a list of fonts containing `Verdana` and `DejaVu Sans` with `sans-serif` as a fallback. */
 .oddNumbered,
 .oddWithFont {
-    background-color: red; /* TODO: Change to RGB, HEX, or HSL */
+    background-color: rgb(255, 167, 167);
     font-family: Verdana, "DejaVu Sans", sans-serif;
 }
 
 /* The Second Element: ID Selector */
 /* Blue text and a font size of 36px. */
-#firstID {
-    color: blue; /* TODO: Change to RGB, HEX, or HSL */
+#idTwo {
+    color: rgb(0,0,255);
     font-size: 36px;
 }
 
@@ -21,8 +21,8 @@
 
 /* The Fourth Element: ID Selector */
 /* A light green background, a font size of 24px, and bold. */
-#secondID {
-    background-color: green;
+#idFour {
+    background-color: rgb(128, 255, 128);
     font-size: 24px;
     font-weight: bold;
 }
