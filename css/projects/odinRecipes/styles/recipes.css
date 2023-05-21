@@ -1,0 +1,4 @@
+/* Color the background of all pages a alice blue */
+body {
+    background-color: aliceblue;
+}
