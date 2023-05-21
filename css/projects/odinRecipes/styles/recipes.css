@@ -4,6 +4,13 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+/* Color the headings a pastel brown */
+h1,
+h2 {
+    color: #8B4513;
+}
+
+/* Center the main heading */
 h1 {
     text-align: center;
 }
