@@ -2,14 +2,59 @@
     padding: 0;
     margin: 0;
     font-size: 40px;
+    box-sizing: border-box;        /* This is used frequently in CSS since it makes styling much easier */ 
 }
 
 .box-one {
     background-color: #EB5757;
-    border: 0 solid #9B51E0;
+    height: 100px;
+    width: 100px;
+    padding: 10px;                 /* We are making our box larger with padding */
+    border: 30px solid #9B51E0;  /* This gives our content a nice purple border */
+    margin: 60px;                  /* This spaces two elements apart from each other */
 }
 
 .box-two {
     background-color: #2D9CDB;
     border: 0 solid #27AE60;
+    height: 100px;
+    width: 100px;
+    padding: 10px;                 /* We are making our box larger with padding */
+    border: 30px solid #9B51E0;  /* This gives our content a nice purple border */
+    margin: 60px;
 }
+
+/*
+    Notes:
+     - Everything in CSS is a box, either a square or rectangle.
+
+     - In this case, our boxes hold "One" and "Two."
+
+     - Using padding makes our boxes bigger; otherwise, its base value 
+       is no larger than the content inside.
+
+     - Padding is mostly used to add background to an element.
+
+     - Margin is used to go around two different items to make them 
+       spaced apart from each other.
+
+     - Similar to how we modify images, we can use `height` and `width` 
+       with these boxes.
+
+     - Using DevTools with Google Chrome, we are able to observe all
+       these changes to the box. 
+
+     - If we add a margin of 60px to one and 60px to two, you will notice
+       that two doesn't move down but to the right. This is because one 
+       already has a margin value that is 60px away, so they overlap. 
+       Therefore, if we add 70px to two, it would move down by 10px. 
+
+     - To get the height of the box, we wouldn't just use the keyword, 
+       `height`, we would add height, width, padding, and border to get
+       the correct value. This means that the height of One is 180px.
+
+     - If we just wanted to take into account height and width, we could
+       use "box-sizing: border-box;". Instead of adding height and padding
+       to the actual height, it uses height and width and the padding and 
+       border cut into these values. 
+*/
