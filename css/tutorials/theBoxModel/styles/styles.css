@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+}
+
+.box-one {
+    background-color: #EB5757;
+    border: 0 solid #9B51E0;
+}
+
+.box-two {
+    background-color: #2D9CDB;
+    border: 0 solid #27AE60;
+}
