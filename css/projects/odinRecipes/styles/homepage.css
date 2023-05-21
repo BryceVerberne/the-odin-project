@@ -1,6 +1,12 @@
 /* Color the background of all pages a alice blue */
 body {
     background-color: aliceblue;
+    text-align: center;
+}
+
+/* Create a newline after every link */
+a {
+    display: block;
 }
 
 /* Format the homepage logo */
