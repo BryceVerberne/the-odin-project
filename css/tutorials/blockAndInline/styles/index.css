@@ -1,0 +1,35 @@
+/* Sets global styles to all elements on the page */
+* {
+  font-family: "Open Sans", Arial, sans-serif;
+  color: #EEEEEE;
+}
+
+/* Styles the <body> element, affecting the global page appearance */
+body {
+  background-color: #f2f2f2;
+}
+
+/* Styles the <h1> header element, giving it specific appearance and layout */
+h1 {
+  text-align: center;
+  background-color: #334257;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 20px;
+  width: 500px;
+}
+
+/* Styles the <div> elements, which are often used as containers for other elements */
+div {
+  text-align: center;
+  background-color: #476072;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px auto;
+  width: 300px;
+}
+
+/* Styles the <a> link elements, controlling their appearance */
+a {
+  text-decoration: none;
+}
