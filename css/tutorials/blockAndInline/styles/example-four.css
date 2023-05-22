@@ -1,0 +1,31 @@
+/* 
+This CSS demonstrates the use of both block and inline display properties. 
+Block elements, like <p> and <ul>, are styled with a rebeccapurple border.
+Inline elements, like <span> and <li>, are styled with a blue border.
+The 'inline' class is used to change the display property of some <p> elements to inline.
+The <ul> is displayed as inline-flex to create a horizontal list without bullets.
+*/
+
+/* Add rebeccapurple border to all <p> and <ul> elements */
+p, 
+ul {
+  border: 2px solid rebeccapurple;
+}
+
+/* Add blue border to all <span> and <li> elements */
+span,
+li {
+  border: 2px solid blue;
+}
+
+/* Change <ul> display to inline-flex, remove bullet points and padding */
+ul {
+  display: inline-flex;
+  list-style: none;
+  padding: 0;
+} 
+
+/* Change <p> elements with class 'inline' to display inline */
+.inline {
+  display: inline;
+}
