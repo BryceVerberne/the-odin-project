@@ -1,7 +1,12 @@
 /*
-  This CSS example showcases the use of inline and block elements.
-  The styles are applied to paragraphs (<p>), unordered lists (<ul>),
-  and elements with the class "block".
+  This example has three different HTML elements, all of which have an outer display type of `block`.
+
+  1. A paragraph with a border added in CSS. The browser renders this as a block box. The paragraph 
+     starts on a new line and extends the entire available width.
+  2. A list, which is laid out using `display: flex`. This establishes flex layout for the children 
+     of the container, which are flex items. The list itself is a block box and — like the paragraph — expands to the full container width and breaks onto a new line.
+  3. A block-level paragraph, inside which are two `<span>` elements. These elements would normally be 
+     `inline`, however, one of the elements has a class of "block" which gets set to `display: block`.
 */
 
 p, 
