@@ -1,0 +1,7 @@
+/*
+  In this example, span is being used as an inline-level element
+  in that it is modifying the text with highlight within <p>. 
+*/
+.highlight {
+    background-color: yellow;
+}
