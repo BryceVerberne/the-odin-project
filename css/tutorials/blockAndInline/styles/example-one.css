@@ -3,21 +3,29 @@
     us to divide the page into different blocks and apply styling
     to each block. 
 */
+
 div {
-    padding: 30px;
-    text-align: center;
-    margin-bottom: 10px;
-    color: #EEEEEE;
-  }
-  
-  .introduction {
-    background-color: #548CA8;
-  }
-  
-  .main-content {
-    background-color: #476072;
-  }
-  
-  .contact-us {
-    background-color: #334257;
-  }
+  /* Adds padding around the content within the div */
+  padding: 30px;
+  /* Centers the content horizontally within the div */
+  text-align: center;
+  /* Adds margin at the bottom of the div */
+  margin-bottom: 10px;
+  /* Sets the text color within the div to light gray */
+  color: #EEEEEE;
+}
+
+.introduction {
+  /* Sets the background color of the "introduction" block to a light blue shade */
+  background-color: #548CA8;
+}
+
+.main-content {
+  /* Sets the background color of the "main-content" block to a darker blue shade */
+  background-color: #476072;
+}
+
+.contact-us {
+  /* Sets the background color of the "contact-us" block to a dark blue shade */
+  background-color: #334257;
+}

@@ -1,20 +1,33 @@
+/*
+  This CSS example showcases the use of inline and block elements.
+  The styles are applied to paragraphs (<p>), unordered lists (<ul>),
+  and elements with the class "block".
+*/
+
 p, 
 ul {
+  /* Adds a 2px solid border with the color "rebeccapurple" to paragraphs and unordered lists */
   border: 2px solid rebeccapurple;
+  /* Adds padding of 0.5em to paragraphs and unordered lists */
   padding: .5em;
 }
 
 .block,
 li {
+  /* Adds a 2px solid border with the color "blue" to elements with the class "block" and list items */
   border: 2px solid blue;
+  /* Adds padding of 0.5em to elements with the class "block" and list items */
   padding: .5em;
 }
 
 ul {
+  /* Sets the display property of unordered lists to flex */
   display: flex;
+  /* Removes the default bullet points from unordered lists */
   list-style: none;
 }
 
 .block {
+  /* Sets the display property of elements with the class "block" to block-level */
   display: block;
-} 
+}
