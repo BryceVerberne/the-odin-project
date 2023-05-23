@@ -1,39 +1,48 @@
 body {
-    background-color: #a7dbe3;
-    color: green;
-    font-size: 21px;
-    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  background-color: #a7dbe3;
+  color: green;
+  font-size: 21px;
+  font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
 
 h1 {
-    font-size: 70px;
-    color: #3747b3;
-    font-family: Rockwell, "Courier Bold", Courier, Georgia, 'Times New Roman', serif;
-    margin-bottom: 0px;
+  font-size: 70px;
+  color: #3747b3;
+  font-family: Rockwell, "Courier Bold", Courier, Georgia, 'Times New Roman', serif;
+  margin-bottom: 0px;
 }
 
 h2 {
-    margin-top: 0px;
+  margin-top: 0px;
 }
 
 p {
-    margin-top: 0px;
-    margin-bottom: 20px;
-    line-height: 1.4;
-    font-size: 30px;
-    color: firebrick;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+  font-size: 30px;
+  color: firebrick;
 }
 
-a:link { /* This specifies the qualities of a normal link. So basically `<a>` but more specific. */
-    color: black; /* Change the link default color from blue to black */
+a { /* I don't use a pseudo class here since I want this to be true for all states of my link */
+  text-decoration: none; /* This removes the underline defaulted for links */
 }
 
-a:visited { /* This specifies the qualities of a link after you've visited it. */
-    color: green;
+a:link { /* #1 in line: This specifies the qualities of a normal link. So basically `<a>` but more specific. */
+  color: black; /* Change the link default color from blue to black */
 }
 
-a:hover { /* This specifies the qualities of a link when a cursor hovers over it. */
-    color: yellow; /* Now, when we hover over our links, they change to yellow! */
+a:visited { /* #2 in line: This specifies the qualities of a link after you've visited it. */
+  color: green;
+}
+
+a:hover,  /* #3 in line: This specifies the qualities of a link when a cursor hovers over it. */
+a:focus { /* This changes qualities of a link for those traversing a site using tab */
+  color: yellow; /* Now, when we hover over our links, they change to yellow! */
+}
+
+a:active { /* #4 in line: This specifies the qualities of a link when you click down on it. */
+  color: blue;
 }
 
 /*
@@ -56,9 +65,18 @@ a:hover { /* This specifies the qualities of a link when a cursor hovers over it
        font size, and many other qualities. 
 
      - Including the `hover` state, there are four states that we can use:
-        1. a:hover   - This specifies the qualities of a link when a cursor hovers over it.
-        2. a:link    - This specifies the qualities of a normal link. So basically `<a>` but more specific.
-        3. a:visited - This specifies the qualities of a link after you've visited it. This notifies the 
+        1. a:link    - This specifies the qualities of a normal link. So basically `<a>` but more specific.
+        2. a:visited - This specifies the qualities of a link after you've visited it. This notifies the 
                        user that they've already visited a certain link.
-        4. 
+        3. a:hover   - This specifies the qualities of a link when a cursor hovers over it.
+        4. a:active  - This specifies the qualities of a link when you click down on it.
+
+     - LINKS HAVE TO HAVE THEIR QUALITIES SPECIFIED IN THE ORDER SHOWN ABOVE. You can't use 'a:active' and
+       in the section below use `a:link`. 
+
+     - `a:focus` is another one to remember. For people who use tab to cycle through the links on a page,
+        this changes the color of text when a link has been selected using this feature. 
+
+     - Lastly, sometimes we don't like having the line on the bottom, so we use `text-decoration: none;` 
+       to get rid of that detail. 
 */
