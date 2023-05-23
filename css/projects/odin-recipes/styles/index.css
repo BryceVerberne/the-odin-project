@@ -1,40 +1,83 @@
-/* Color the background of all pages a alice blue */
+/* 
+  This rule sets the box-sizing to 'border-box' for the whole HTML document.
+  This CSS property includes padding and border in the element's total width and height, not just the content box.
+*/
+html {
+    box-sizing: border-box;
+}
+/* 
+  This rule applies the inherited box-sizing to all elements and their before and after pseudo-elements in the HTML document.
+  This way, every element on the page will use the same box model as the root html element.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* 
+  This rule sets the background color of the body to alice blue, centers the text,
+  and sets the font family to 'Lato', a sans-serif font.
+*/
 body {
     font-family: 'Lato', sans-serif;
     background-color: aliceblue;
     text-align: center;
 }
 
+/* 
+  This rule removes bullet points, and the default spacing and margin around unordered lists.
+*/
 ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove spacing/padding */
-    margin: 0; /* Remove spacing/margin */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
+/* 
+  This rule removes the default text decoration (usually an underline) from anchor tags.
+*/
 a {
     text-decoration: none;
 }
 
+/* 
+  This rule sets the color of unvisited links to a dark brown color.
+*/
 a:link {
     color: #74380d;
 }
 
+/* 
+  This rule changes the color of visited links to black.
+*/
 a:visited {
     color: black;
 }
 
+/* 
+  These rules change the color of links to a darker gray when they're hovered over or focused on.
+*/
 a:hover,
 a:focus {
     color: #555;
 }
 
-/* Format the homepage logo */
+/* 
+  This rule gives the logo a width of 200px, automatically adjusts its height to maintain aspect ratio, 
+  and rounds the corners with a 5px border radius.
+*/
 .logo {
     width: 200px;
     height: auto;
     border-radius: 5px;
 }
 
+/* 
+  This rule sets the styles for the recipe-section class.
+  It sets the background color to light gray, adds a box shadow, and a black border. 
+  It sets a specific width and auto margins for centering, adds padding, and rounds the corners.
+*/
 .recipe-section {
     background-color: lightgray;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
@@ -45,15 +88,14 @@ a:focus {
     border-radius: 20px;
 }
 
+/* 
+  This rule sets the styles for the link-container class.
+  It sets the background color to wheat color, adds auto margins, and adds padding. 
+  It also adds a brown border, rounds the corners, and sets a specific width.
+*/
 .link-container {
     background-color: #F5DEB3;
-    /*
-        Setting the margin as 5px auto applies a top/bottom margin of 5px, and a 
-        left/right margin of auto. This effectively centers the block-level element 
-        horizontally within its parent.
-    */
     margin: 5px auto;
-
     padding: 3px;
     border: 2px solid #74380d;
     border-radius: 10px;

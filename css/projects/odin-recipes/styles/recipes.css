@@ -1,21 +1,49 @@
-/* Color the background of all pages a alice blue */
+/* 
+  Sets the box-sizing to 'border-box' for the whole HTML document.
+  This CSS property includes padding and border in the element's total width and height, not just the content box.
+*/
+html {
+    box-sizing: border-box;
+}
+  
+/* 
+  Applies the inherited box-sizing to all elements and their before and after pseudo-elements in the HTML document.
+  This way, every element on the page will use the same box model as the root html element.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* 
+  Sets the background color of the body to alice blue, and the font family to 'Lato', a sans-serif font.
+*/
 body {
     font-family: 'Lato', sans-serif;
     background-color: aliceblue;
 }
 
-/* Center the main heading */
+/* 
+  Centers the main heading (h1) and sets its width. Auto margin is used for horizontal centering.
+*/
 h1 {
     text-align: center;
     width: 500px;
     margin: auto;
 }
 
-/* Color the headings a pastel brown */
+/* 
+  Sets the color of the h2 headings to a pastel brown.
+*/
 h2 {
     color: #8B4513;
 }
 
+/* 
+  Styles images to a specific width, automatically adjusts its height to maintain aspect ratio, 
+  centers the images, adds top margin and a gray border, and adds a box shadow.
+*/
 img {
     width: 300px;
     height: auto;
@@ -25,18 +53,28 @@ img {
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
+/* 
+  Centers the paragraph text and sets its width. Auto margin is used for horizontal centering.
+*/
 p {
     text-align: center;
     width: 900px;
     margin: auto;
 }
 
+/* 
+  Styles elements with class 'dish-introduction' to have bold, italic text and automatic vertical margins.
+*/
 .dish-introduction {
     font-weight: bold;
     font-style: italic;
     margin: 10px auto;
 }
 
+/* 
+  Styles elements with class 'text-section' to have a wheat background color, box shadow, 
+  gray border, rounded corners, automatic vertical margins, padding, and a specific width.
+*/
 .text-section {
     background-color: #F5DEB3;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
