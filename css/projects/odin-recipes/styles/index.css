@@ -1,6 +1,7 @@
 /* Color the background of all pages a alice blue */
 body {
     font-family: 'Lato', sans-serif;
+    background-color: aliceblue;
     text-align: center;
 }
 
@@ -15,11 +16,11 @@ a {
 }
 
 a:link {
-    color: black;
+    color: #74380d;
 }
 
 a:visited {
-    color: #74380d;
+    color: black;
 }
 
 a:hover,
@@ -33,6 +34,15 @@ a:focus {
     height: auto;
 }
 
+.recipe-section {
+    background-color: lightgray;
+    border: 2px solid black;
+    width: 425px;
+    margin: 5px auto 30px auto;
+    padding: 10px;
+    border-radius: 20px;
+}
+
 .link-container {
     background-color: #F5DEB3;
 
@@ -43,8 +53,8 @@ a:focus {
     */
     margin: 5px auto;
 
-    padding: 8px;
-    border: 2px solid #f7d89e;
+    padding: 3px;
+    border: 2px solid #74380d;
     border-radius: 10px;
     width: 400px;
 }
