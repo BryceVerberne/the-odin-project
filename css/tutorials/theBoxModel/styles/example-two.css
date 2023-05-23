@@ -6,6 +6,9 @@
      - margin-right
      - margin-bottom
      - margin-left
+
+    Although margin is what is being discussed in this example, these concepts also
+    apply to many other sizing features, such as padding and border. 
 */
 
 html {
@@ -27,4 +30,5 @@ html {
     margin-right: 15px;
     margin-bottom: 20px;
     margin-left: 5em;
+    /* You can also combine this into one instruction: margin: 5em 15px 20px 5em; */
   }  
