@@ -1,30 +1,48 @@
 /* Color the background of all pages a alice blue */
 body {
-    background-color: #F5DEB3;
     font-family: 'Lato', sans-serif;
-}
-
-/* Color the headings a pastel brown */
-h1,
-h2 {
-    color: #8B4513;
+    background-color: aliceblue;
 }
 
 /* Center the main heading */
 h1 {
     text-align: center;
-}
-
-img {
-    width: 400px;
-    height: auto;
-    display: block;
+    width: 500px;
     margin: auto;
 }
 
+/* Color the headings a pastel brown */
+h2 {
+    color: #8B4513;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin: 20px auto 0px;
+    border: 5px solid gray;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    text-align: center;
+    width: 900px;
+    margin: auto;
+}
+
+.dish-introduction {
+    font-weight: bold;
+    font-style: italic;
+    margin: 10px auto;
+}
+
 .text-section {
+    background-color: #F5DEB3;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
     border: 5px solid gray;
     border-radius: 20px;
-    margin: 20px;
+    margin: 20px auto;
     padding: 10px;
+    width: 1000px;
 }
