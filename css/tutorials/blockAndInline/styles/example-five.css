@@ -1,8 +1,10 @@
 #div-1 {
+    display: block; /* This is the default display for a div */
     background-color: red;
 }
 
 #span-1 {
+    display: inline; /* This is the default display for a span */
     background-color: cyan;
 }
 
@@ -15,6 +17,33 @@
 }
 
 #img {
+    display: inline-block; /* Images are inline-block elements by default */
     width: 50px;
     height: 50px;
 }
+
+/*
+    Notes:
+     - As you can see, both divs are displayed on their own lines and take up the
+       the entire width of the screen. This is because they are set as `block` by
+       default. 
+
+     - A display block takes up the entire width given to it and forces a newline
+       above and below it. This means that content is never beside it, only above or
+       below. 
+
+     - span has a default of display inline, meaning that it takes up the minimum 
+       amount of space possible. Given this, they share lines with other inline 
+       elements, like how the picture is shared with the statement "This is a span."
+
+     - On the other hand, images are automatically set as inline-block display 
+       elements. 
+
+     - An inline-block is just like an inline element since it tries to 
+       take up the least space possible and other things can be on the same line as
+       it. However, unlike an inline element, you can change the height and width of
+       inline-block elements.
+
+     - Inline elements cannot have a width or height, which is one reason why
+      inline-block can be so useful!
+*/
