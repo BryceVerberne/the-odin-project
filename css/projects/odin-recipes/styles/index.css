@@ -32,11 +32,13 @@ a:focus {
 .logo {
     width: 200px;
     height: auto;
+    border-radius: 5px;
 }
 
 .recipe-section {
     background-color: lightgray;
-    border: 2px solid black;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    border: 5px solid black;
     width: 425px;
     margin: 5px auto 30px auto;
     padding: 10px;
@@ -45,7 +47,6 @@ a:focus {
 
 .link-container {
     background-color: #F5DEB3;
-
     /*
         Setting the margin as 5px auto applies a top/bottom margin of 5px, and a 
         left/right margin of auto. This effectively centers the block-level element 
