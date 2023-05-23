@@ -1,17 +1,16 @@
 /* Color the background of all pages a alice blue */
 body {
     font-family: 'Lato', sans-serif;
-    background-color: #F5DEB3;
     text-align: center;
-}
-
-/* Create a newline after every link */
-a {
-    display: block;
 }
 
 /* Format the homepage logo */
 .logo {
     width: 200px;
     height: auto;
+}
+
+.link-container {
+    background-color: #F5DEB3;
+    padding: 8px;
 }
