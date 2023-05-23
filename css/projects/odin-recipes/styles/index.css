@@ -4,6 +4,29 @@ body {
     text-align: center;
 }
 
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove spacing/padding */
+    margin: 0; /* Remove spacing/margin */
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: #74380d;
+}
+
+a:hover,
+a:focus {
+    color: #555;
+}
+
 /* Format the homepage logo */
 .logo {
     width: 200px;
@@ -12,5 +35,16 @@ body {
 
 .link-container {
     background-color: #F5DEB3;
+
+    /*
+        Setting the margin as 5px auto applies a top/bottom margin of 5px, and a 
+        left/right margin of auto. This effectively centers the block-level element 
+        horizontally within its parent.
+    */
+    margin: 5px auto;
+
     padding: 8px;
+    border: 2px solid #f7d89e;
+    border-radius: 10px;
+    width: 400px;
 }
