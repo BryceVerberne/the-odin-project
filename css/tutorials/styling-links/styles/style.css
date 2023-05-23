@@ -1,6 +1,6 @@
 body {
     background-color: #a7dbe3;
-    color: #2f4c5c;
+    color: green;
     font-size: 21px;
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 }
@@ -21,4 +21,33 @@ p {
     margin-bottom: 20px;
     line-height: 1.4;
     font-size: 30px;
+    color: firebrick;
 }
+
+a {
+    color: black; /* Change the link default color from blue to black */
+}
+
+a:hover { /* This is a psuedo class of `<a>` */
+    color: yellow; /* Now, when we hover over our links, they change to yellow! */
+}
+
+/*
+    Notes:
+     - Even though `body` specifies the color as green, the paragraph is firebrick, why? As you can see
+       the color firebrick is specified in our `p` which is more specific to the situation than body, 
+       which is more obscure and broad. This means that the system will favor firebrick instead of green.
+
+     - Blue is the default style of our links, established by the browser. However, we can overcome
+       this by using the `<a>` tag. As you can see above, we change this default to the color black
+       by using `color: black;`.
+
+     - We can also create a hover effect with links, which includes something called psuedo classes.
+
+     - A psuedo class is a selector that we can use that will select the element in different states 
+       of being. In this case, we can use `a:hover`, which means that the `<a>` tag will exhibit the 
+       properties we specify when we hover over a link with our cursor. 
+
+     - You can change far more properties than just color with hover, such as font style, font family, 
+       font size, and many other qualities. 
+*/
