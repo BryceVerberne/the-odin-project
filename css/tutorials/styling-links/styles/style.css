@@ -24,11 +24,15 @@ p {
     color: firebrick;
 }
 
-a {
+a:link { /* This specifies the qualities of a normal link. So basically `<a>` but more specific. */
     color: black; /* Change the link default color from blue to black */
 }
 
-a:hover { /* This is a psuedo class of `<a>` */
+a:visited { /* This specifies the qualities of a link after you've visited it. */
+    color: green;
+}
+
+a:hover { /* This specifies the qualities of a link when a cursor hovers over it. */
     color: yellow; /* Now, when we hover over our links, they change to yellow! */
 }
 
@@ -50,4 +54,11 @@ a:hover { /* This is a psuedo class of `<a>` */
 
      - You can change far more properties than just color with hover, such as font style, font family, 
        font size, and many other qualities. 
+
+     - Including the `hover` state, there are four states that we can use:
+        1. a:hover   - This specifies the qualities of a link when a cursor hovers over it.
+        2. a:link    - This specifies the qualities of a normal link. So basically `<a>` but more specific.
+        3. a:visited - This specifies the qualities of a link after you've visited it. This notifies the 
+                       user that they've already visited a certain link.
+        4. 
 */
