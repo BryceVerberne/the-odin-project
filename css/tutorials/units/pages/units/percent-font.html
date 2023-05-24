@@ -13,12 +13,29 @@
     <div class="two-em">2em</div>
     <div class="two-hundred-percent">200%</div>
 
+    <p>
+        Given that everything has the same font, everything is modified to have the same value. 
+        Each example is effectively getting 200% of the root font-size.
+    </p>
+
     <hr>
 
     <div class="parent">
         <div class="two-rem">2rem</div>
         <div class="two-em">2em</div>
         <div class="two-hundred-percent">200%</div>
+
+        <p style="font-size: 1rem">
+            As you can see, as we change the parent to have a font-size of 30px,
+            `2rem` stays that same since it is staying true to the root font-size. However,
+            both `2em` and `200%` change to have a font-size of 60px since they both double
+            the font's size.
+        </p>
+
+        <p style="font-size: 1rem">
+            Using percentages with fonts do the exact same thing as how `em` interacts with 
+            fonts.
+        </p>
     </div>
 </body>
 </html>
