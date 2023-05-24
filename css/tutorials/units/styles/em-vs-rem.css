@@ -36,3 +36,23 @@
 .parent {
     font-size: 30px;
 }
+
+/*
+    Notes:
+     - Both `em` and `rem` are relative to the font-size that you have defined.
+
+     - The "r" in `rem` stands for root, meaning that it is relative to our root font-size.
+
+     - `em` is relative to the parent font-size, not the root font-size. 
+
+     - What 1rem and 1em means is that they are 100% the root font-size and 100% the parent
+       font-size. If we scale these up to 2rem and 2em, this is now 200% of either value.
+
+     - Essentially, an 1rem is going to have the same font-size no matter where it is defined
+       within the document; however, 1em changes depending on its parent.
+
+     - By using `em` with shapes, as we scale up the font-size, so does the size of the box.
+
+     - Ultimately, `em` is great since it provides scaling capabilities and `rem` is useful for 
+       when you want to set a font to the base size, even if you are unsure of what that is.
+*/
