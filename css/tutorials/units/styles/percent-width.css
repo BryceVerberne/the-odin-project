@@ -1,0 +1,20 @@
+.fifty-percent {
+    width: 50%;
+}
+
+.one-hundred-pixels {
+    width: 100px;
+}
+
+.parent {
+    width: 135px;
+}
+
+
+/*
+    Notes: 
+     - A pixel unit is an absolute width, which is always going to be the same, regardless of where it is.
+
+     - A percentage is a percentage width that is based off of its parent's size. Therefore, unless we
+       have some type of constraint, a width of 50% will take up the width of half the webpage. 
+*/
