@@ -13,3 +13,12 @@
 .parent {
     font-size: 30px;
 }
+
+
+/*
+    Notes:
+     - Using percentages with fonts works in the same way as `em`. If we ask for a font-size
+       of 200%, we get double the current font-size. 
+
+     - This is relative to its parent.
+*/
