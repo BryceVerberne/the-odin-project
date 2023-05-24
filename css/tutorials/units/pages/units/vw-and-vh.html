@@ -20,5 +20,20 @@
         <div class="box fifty-vw">50vw</div>
         <div class="box twenty-five-vh">25vh</div>
     </div>
+
+    <p>
+        For every unit of vw or vh, that is a percentage of the screen that you are taking up.
+        Therefore, 50vw will take up 50% of the width screen and 50vh will take up 50% of the 
+        height of the screen.
+    </p>
+
+    <p>
+        How is this any different from percentages? Well, percentages are relative to their 
+        parent. So, if you have a parent box that has a width of 100px, and you have a box inside
+        this parent that is assigned a width of 50%, it will take up 50px of the parent box. On 
+        the other hand, vw and vh do not take into consideration their parents. Therefore, if we 
+        replaced 50% will 50vw, it would take up 50% of the entire screen width and ignore the 
+        parent box of 100px. 
+    </p>
 </body>
 </html>
