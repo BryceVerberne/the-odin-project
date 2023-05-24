@@ -13,3 +13,16 @@
 .parent {
     width: 100px;
 }
+
+/*
+    Notes:
+     - vw stands for viewport width and vh stands for viewport height.
+
+     - One vw equals one percent of the entire width screen size. Therefore, 100vw would take
+       up the entire width (100%), 50vw would take up 50%, and etc. 
+
+     - vh holds the same concept as vw; however, it applies to height. 
+
+     - The big difference between vw and vh compared to percentages is that vw and vh is based
+       on the entire screen size when percentages are relative to their parent. 
+*/
