@@ -1,5 +1,5 @@
 .flexbox-container {
-
+    display: flex; /* This is how we create a flexbox container. */
 }
 
 .flexbox-item {
@@ -10,13 +10,93 @@
 }
 
 .flexbox-item-1 {
+    flex: 1 0 0px; /* flex-grow, flex-shrink, flex-basis */
     min-height: 100px;
+    flex-shrink: 0;
+    align-self: flex-end;
+    order: 3;
 }
 
 .flexbox-item-2 {
     min-height: 200px;
+    flex-grow: 2;
+    flex-basis: 0;
+    align-self: center;
+    order: 1;
 }
 
 .flexbox-item-3 {
     min-height: 300px;
+    flex-grow: 1;
+    flex-basis: 0;
+    order: 2;
 }
+
+/*
+    Notes: 
+     - By creating the Flexbox container shown above and writing `display: flex;`,
+       this moved each box from being underneath each other to being side-by-side. 
+
+     - One thing that you'll notice with flex is it's ability to adapt to browser
+       size. If you shrink the browser, they'll shrink with it. 
+
+     - Flexbox is known for having flexibility of styling elements in a container,
+       from the container without having to style the flexbox items.
+
+     - Once we add the background-styles.css file, the axises that Flexbox uses are 
+       shown. What this tells us is that our Flexbox container is laid out in a row
+       as opposed to a column. 
+     - Flexbox gives us a property on the container that gives us the option to 
+       choose a row or column based layout (this is called the Flex direction). 
+       
+     - The main and cross axis will flip accordingly depending on the layout. So, 
+       in a column-based layout, the cross axis is horizontal and the main axis 
+       will go vertically. Essentially, all one needs to remember is that the 
+       main axis always goes in the direction that you are working in. 
+
+     - We style Flexbox based on these axises, so if we wanted to style on the 
+       main axis, we would need to write `justify-content` property.
+
+     - Without specifying anything with `justify-content` our default is 
+       `justify-content: flex-start;` meaning that all content will begin at the
+       start of an axis.
+
+     - By using other keywords with `justify-content` we can manipulate our boxes 
+       in useful ways! Here are a couple:
+         1. `justify-content: center;`       - This enters the boxes.
+         2. `justify-content: space-between` - This makes sure there is an even 
+            amount of space in-between each box.
+         3. `justify-content: space-around`  - This ensures there is the same space 
+            on EVERY side of the boxes.
+
+     - If we wanted to lay things out on the cross-axis, we would use the `align-items`
+       property. There are a few things we can do with this feature. 
+         1. `align-items: stretch` - This is our default, and makes our items stretch
+            to fill the most amount of vertical space that they can.
+         2. `align-items: start`   - If we wanted to keep the size of our item, we would 
+             use this.
+         2. `align-items: center`  - This allows us to center our items vertically, which 
+            is one of the most important things you can do with Flexbox.
+
+     - The last way we can align items is with the `align-content` property, which is 
+       only for using multi-line Flexbox containers. This is useful when we want our 
+       boxes to wrap onto different lines if the browser becomes too small. To implement 
+       the wrap feature, we would use `flex-wrap: wrap;`. In this case, the `align-content`
+       property tells us how much space to put between the lines. Here are a few use cases:
+         1. `align-content: flex-start;`    - Lines the boxes up at the top of the container.
+         2. `align-content: flex-end;`      - Lines the boxes up at the bottom of the container.
+         3. `align-content: space-between;' - This puts even spaces between the wrapped content.
+
+     - To prevent shrinking of a box as we narrow the browser, we can use `flex-shrink` to
+       specify how much we would allow it to shrink, and assign this value to zero. The 
+       same applies to `flex-grow` but the other way around. 
+
+     - On the topic of `flex-grow`, the `flex-basis` property tells the Flexbox where to start
+       growing from. This can override size limits set. 
+
+     - If you needed to align the cross access alignment of a property, you would use the 
+       `align-self` property. 
+
+     - The `order` property allows us to change the order of the items within a Flexbox container,
+       without actually changing our HTML (shouldn't use since it ruins screen-readers & TAB).
+*/
