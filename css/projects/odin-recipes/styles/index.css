@@ -67,10 +67,11 @@ a:focus {
   This rule gives the logo a width of 200px, automatically adjusts its height to maintain aspect ratio, 
   and rounds the corners with a 5px border radius.
 */
-.logo {
-    width: 200px;
+.main-image {
+    width: 300px;
     height: auto;
     border-radius: 5px;
+    margin: 0px auto 10px auto;
 }
 
 /* 
@@ -79,9 +80,9 @@ a:focus {
   It sets a specific width and auto margins for centering, adds padding, and rounds the corners.
 */
 .recipe-section {
-    background-color: lightgray;
+    background-color: #C4A484;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
-    border: 5px solid black;
+    border: 5px solid #48260D;
     width: 425px;
     margin: 5px auto 30px auto;
     padding: 10px;
