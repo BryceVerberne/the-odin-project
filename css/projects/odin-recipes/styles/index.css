@@ -25,6 +25,13 @@ body {
     text-align: center;
 }
 
+/*
+  This rule adds an underline to the main heading.
+*/
+h1 {
+    text-decoration: underline;
+}
+
 /* 
   This rule removes bullet points, and the default spacing and margin around unordered lists.
 */
