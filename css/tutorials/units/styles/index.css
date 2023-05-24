@@ -7,3 +7,8 @@
     margin: 1px;
     background-color: red;
 }
+
+.icon {
+    background-color: red;
+    display: inline-block;
+}
