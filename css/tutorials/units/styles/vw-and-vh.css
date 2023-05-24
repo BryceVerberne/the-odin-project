@@ -1,0 +1,15 @@
+.fifty-vw {
+    width: 50vw;
+}
+
+.fifty-percent {
+    width: 50%;
+}
+
+.twenty-five-vh {
+    height: 25vh;
+}
+
+.parent {
+    width: 100px;
+}
