@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+  }  
+
+.container {
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 25px;
+    align-items: flex-start;
+}
+
+.item {
+    margin: 2px;
+    flex-grow: 1;
+    /*
+        `flex-grow` allows us to make the flex items take up all the available 
+        space within the flex container while evenly distributing their sizes.
+    */
+    text-align: center;
+}
