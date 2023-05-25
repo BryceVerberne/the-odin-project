@@ -1,0 +1,16 @@
+body {
+    background-color: #a7dbe3;
+    font-size: 21px;
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+  }
+  
+  h1 {
+    font-size: 70px;
+    color: #3747b3;
+    font-family: Rockwell, "Courier Bold", Courier, Georgia, 'Times New Roman', serif;
+    margin-bottom: 0px;
+  }
+  
+  h2 {
+    margin-top: 0px;
+  }
