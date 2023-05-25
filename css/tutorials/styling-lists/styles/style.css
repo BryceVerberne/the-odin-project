@@ -1,16 +1,73 @@
 body {
     background-color: #a7dbe3;
     font-size: 21px;
+    color: #4e476a;
+    font-size: 21px;
     font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
-  }
+
+    text-align: center;
+}
   
-  h1 {
+h1 {
     font-size: 70px;
     color: #3747b3;
     font-family: Rockwell, "Courier Bold", Courier, Georgia, 'Times New Roman', serif;
     margin-bottom: 0px;
-  }
+}
   
-  h2 {
+h2 {
     margin-top: 0px;
-  }
+}
+
+p {
+    margin-top: 0px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+ol {
+    list-style-type: lower-roman;
+}
+
+ul {
+    list-style-type: circle;
+    background-color: pink;
+    padding: 50px;
+}
+
+ul li {
+    background-color: red;
+    margin-bottom: 15px;
+}
+
+ol {
+    color: green;
+    list-style-position: inside;
+}
+
+
+/*
+    Notes:
+     - We can modify how we account of each list item in an ordered list with the 
+       `list-style-type` property. Here, you can modify if it gets roman numerals,
+       hollow bullet points, alphabetical order, and many more options.
+
+     - The `list-style-type` property can also apply to an unordered list, and you
+       can make a `ul` look like a `ol`. For this option, the hollow bullet points
+       `circle` is a fun and fitting option.
+
+     - `list-style-type: none;` will take away icons completely.
+
+     - There is also the option to use personal images for the icons using
+       list-style-image: url(<image path>);. However, there is no way to scale these
+       images, so they must be relatively small.
+
+     - You can use properties such as `background-color`, `padding`, `margin`, etc. to 
+       style your list however you please.
+
+     - The color of your icons will match your text. 
+
+     - When you align a list, a weird thing about many browsers is that everything 
+       aligns except for the icons. In order to get around this, we can use 
+       `list-style-position` which helps correct this problem.
+*/
