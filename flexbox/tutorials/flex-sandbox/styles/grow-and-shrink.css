@@ -1,22 +1,54 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
   }  
 
-.container {
+.toolbar {
     width: 50%;
     display: flex;
-    flex-flow: row wrap;
-    font-size: 25px;
-    align-items: flex-start;
+    font-size: 20px;
 }
 
-.item {
-    margin: 2px;
-    flex-grow: 1;
-    /*
-        `flex-grow` allows us to make the flex items take up all the available 
-        space within the flex container while evenly distributing their sizes.
-    */
+.toolbar > div {
+    flex: 1;
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 5px;
     text-align: center;
+}
+
+.navigation {
+    display: flex;
+    width: 50%;
+    margin: 100px 0px 0px 20px;
+    font-size: 30px;
+}
+
+.navigation > div {
+    text-align: center;
+    padding: 5px;
+}
+
+.home,
+.login {
+    flex: 1;
+    background-color: lightgreen;
+    border: 1px solid green;
+}
+
+.home {
+    border-radius: 15px 0px 0px 15px;
+}
+
+.search {
+    flex: 2;
+    background-color: lightblue;
+    border: 1px solid blue;
+}
+
+.login {
+    border-radius: 0px 15px 15px 0px;
 }
