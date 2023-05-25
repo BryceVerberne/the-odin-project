@@ -1,12 +1,40 @@
 .container {
     background: pink;
     height: 50vh;
-    width: 50vh;
+    width: 50vw;
     padding: 0.5em;
     margin: 25vh auto 0;
+
+    display: flex;
+    /*
+    flex-direction: row;
+    flex-wrap: nowrap;
+    */
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
 }
 
 .item {
     background: lightblue;
     margin: 0.5em;
 }
+
+.big {
+    font-size: 2em;
+}
+
+/*
+    Notes:
+     - `flex-wrap` by default is set to `nowrap`. If the screen gets smaller, this states whether 
+       or not we want our boxes to stack or shrink. `wrap` allows each box to maintain a consistent 
+       length.
+       
+     - The downside about `nowrap` is that once the items get as small as possible, if you add more, 
+       they begin to spill out the side. Additionally, values such as a set width may be ignored.
+
+     - `flex-flow` combines `flex-direction` and flex-wrap` together. 
+
+     - Using `baseline` with `align-items` will only look different if you are dealing with different
+       fonts.
+*/
