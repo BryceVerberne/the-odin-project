@@ -4,26 +4,10 @@ body {
     font-family: sans-serif;
   }  
 
-.toolbar {
-    width: 50%;
-    display: flex;
-    font-size: 20px;
-}
-
-.toolbar > div {
-    flex: 1;
-    background-color: aliceblue;
-    border: 1px solid black;
-    border-radius: 20px;
-    margin: 5px;
-    padding: 5px;
-    text-align: center;
-}
-
 .navigation {
     display: flex;
     width: 50%;
-    margin: 100px 0px 0px 20px;
+    margin: 1em;
     font-size: 30px;
 }
 
