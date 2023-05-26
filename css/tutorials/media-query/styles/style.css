@@ -9,11 +9,17 @@ body {
     width: 750px;
 }
 
-.subtitle {
-    font-size: 4rem;
-    border: 2px solid blue;
-    background-color: lightblue;
-    width: 750px;
+.container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.item {
+    flex: 1;
+    border: 2px solid black;
+    background-color: aliceblue;
+    padding: 10px;
 }
 
 /*
@@ -22,8 +28,18 @@ body {
     set to blue.
 */
 @media (max-width: 750px) and (min-width: 500px) { /* @media all and (max-width: 750px) */
-    body {
+    .title {
         color: blue;
+    }
+}
+
+/*
+  By using a media query, we are able to make our text boxes switch to column-mode when
+  the browser gets too small.
+*/
+@media (max-width: 750px) {
+    .container {
+        flex-direction: column;
     }
 }
 
@@ -57,4 +73,10 @@ body {
      - Media queries are like any other selector in that they abide by specificity
        with the cascade. If we put a contradicting property beneath the media query
        which had higher specificity, the media query would be overridden.
+
+     - Media queries become particularly useful with Flexbox! For example, when you 
+       are working with text boxes, if the screen gets too small they can get 
+       squished when working with rows. Where media queries come in is we can set
+       a certain width to where the rows become columns. This allows everything to 
+       fit nicely on the screen! 
 */
