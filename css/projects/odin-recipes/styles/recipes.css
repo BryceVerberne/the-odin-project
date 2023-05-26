@@ -1,30 +1,4 @@
 /* 
-  Sets the box-sizing to 'border-box' for the whole HTML document.
-  This CSS property includes padding and border in the element's total width and height, not just the content box.
-*/
-html {
-    box-sizing: border-box;
-}
-  
-/* 
-  Applies the inherited box-sizing to all elements and their before and after pseudo-elements in the HTML document.
-  This way, every element on the page will use the same box model as the root html element.
-*/
-*,
-*::before,
-*::after {
-    box-sizing: inherit;
-}
-
-/* 
-  Sets the background color of the body to alice blue, and the font family to 'Lato', a sans-serif font.
-*/
-body {
-    font-family: 'Lato', sans-serif;
-    background-color: aliceblue;
-}
-
-/* 
   Centers the main heading (h1) and sets its width. Auto margin is used for horizontal centering.
 */
 h1 {
