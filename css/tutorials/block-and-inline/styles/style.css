@@ -1,0 +1,20 @@
+/*
+  The following code allows us to use the alternative box model for all 
+  your elements. This is a common choice among developers since the content, 
+  padding, and border is considered in `height` and `width`. Less math and 
+  fewer mistakes!
+*/
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+/* Styles the <body> element, affecting the global page appearance */
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+    background-color: #f2f2f2;
+  }
