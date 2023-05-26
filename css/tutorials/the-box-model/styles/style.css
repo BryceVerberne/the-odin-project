@@ -1,0 +1,19 @@
+html {
+    box-sizing: border-box;
+  }
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
+  /* Sets global styles to all elements on the page */
+* {
+    font-family: "Open Sans", Arial, sans-serif;
+  }
+
+/* Styles the <body> element, affecting the global page appearance */
+body {
+    background-color: #f2f2f2;
+}
