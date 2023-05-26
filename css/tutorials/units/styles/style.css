@@ -1,0 +1,29 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+      background-color: #f6f6f8;
+      font-family: sans-serif;
+    }  
+
+.parent {
+    border: 1px solid black;
+}
+
+.box {
+    border: 1px solid black;
+    margin: 1px;
+    background-color: red;
+}
+
+.icon {
+    background-color: red;
+    display: inline-block;
+}
