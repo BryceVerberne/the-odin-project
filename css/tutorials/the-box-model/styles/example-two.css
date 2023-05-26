@@ -11,15 +11,6 @@
     apply to many other sizing features, such as padding and border. 
 */
 
-html {
-    box-sizing: border-box;
-  }
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
-
 .box {
     background-color: lightgray;
     width: 500px;
