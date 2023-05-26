@@ -1,11 +1,60 @@
 body {
-    color: red;
+    color: black;
 }
 
 .title {
     font-size: 6rem;
+    border: 2px solid blue;
+    background-color: lightblue;
+    width: 750px;
 }
 
 .subtitle {
     font-size: 4rem;
+    border: 2px solid blue;
+    background-color: lightblue;
+    width: 750px;
 }
+
+/*
+    This media is saying that regardless of the device, if you go below the max-width
+    of 750px AND you are above the min-width of 500px, the color of the body will be 
+    set to blue.
+*/
+@media (max-width: 750px) and (min-width: 500px) { /* @media all and (max-width: 750px) */
+    body {
+        color: blue;
+    }
+}
+
+/*
+    Notes: 
+     - Media queries are great for mobile devices due to responsiveness; however,
+       they can be just as useful on a computer. 
+    
+     - Media queries are started by writing `@media` and follow this with the type 
+       of device you are working with. `screen` refers to any type of device with a 
+       screen and the rest are explanatory. Generally, you would use `all` so your
+       query is compatible with a large range of devices. 
+
+     - We don't have to explicitly state `all` since it already defaults to this 
+       unless we state otherwise.
+
+     - We use `and` to concatenate the device we are working with and the command. 
+       This keyword can also be used to pair more than one condition, like with C and
+       conditional statements. 
+    
+     - A `,` functions as our OR logical operator, which we put between two or more 
+       conditions.
+
+     - Once all the values that have been declared inside the media query are true, 
+       property inside will execute.
+
+     - We can also change our condition (which is in the parentheses) to `print`, 
+       which means that whenever we want to print a page, we can specify the 
+       qualities that we want that page to have.
+
+     - Media queries are like any other selector in that they abide by specificity
+       with the cascade. If we put a contradicting property beneath the media query
+       which had higher specificity, the media query would be overridden.
+*/
