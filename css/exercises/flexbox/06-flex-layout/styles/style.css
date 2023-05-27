@@ -5,6 +5,9 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 img {
@@ -37,14 +40,6 @@ ul {
 a {
   text-decoration: none;
   color: gray;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border: 2px solid #040404;
-  height: 100vh;
 }
 
 .header,
