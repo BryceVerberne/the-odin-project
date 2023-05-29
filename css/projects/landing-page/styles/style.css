@@ -18,6 +18,13 @@ body {
     border: 2px solid red;
 }
 
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 .header,
 .introduction,
 .information,
