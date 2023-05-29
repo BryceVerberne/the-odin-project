@@ -14,9 +14,17 @@ body {
     height: 100vh;
     margin: 0;
     overflow: hidden;
+
+    border: 2px solid red;
 }
 
-.section {
+.header,
+.introduction,
+.information,
+.call-to-action,
+.footer {
     display: flex;
-    flex: 1;
+    flex-grow: 1;
+
+    border: 2px solid blue;
 }
