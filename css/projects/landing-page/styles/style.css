@@ -25,7 +25,7 @@ ul {
     padding: 0;
 }
 
-.header,
+.hero,
 .introduction,
 .information,
 .call-to-action,
@@ -34,4 +34,15 @@ ul {
     flex-grow: 1;
 
     border: 2px solid blue;
+}
+
+.hero {
+    flex-direction: column;
+}
+
+.hero .header {
+    display: flex;
+    padding: 0px 100px;
+    justify-content: space-between;
+    border: 2px solid green;
 }
