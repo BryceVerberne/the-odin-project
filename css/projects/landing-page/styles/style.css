@@ -15,3 +15,8 @@ body {
     margin: 0;
     overflow: hidden;
 }
+
+.section {
+    display: flex;
+    flex: 1;
+}
