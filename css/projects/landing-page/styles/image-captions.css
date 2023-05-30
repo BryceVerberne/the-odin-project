@@ -1,0 +1,43 @@
+/* Header & Body Styles */
+.image-captions {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+    gap: 52px;
+}
+
+/* Header Styles */
+.image-captions-header {
+    color: #1F2937;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* Body Styles */
+.information {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 55px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+    flex-shrink: 0;
+}
+
+.illustration {
+    width: 160px;
+    height: 160px;
+    border-radius: 15px;
+    border: 4px solid #3882F6;
+}
+
+.subtext {
+    width: 155px;
+    color: rgb(108, 104, 104);
+}
