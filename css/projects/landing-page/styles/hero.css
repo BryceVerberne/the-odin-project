@@ -1,0 +1,93 @@
+/* Header Styles */
+.hero .header {
+    display: flex;
+    padding: 20px 200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #F9FAF8;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 100px;
+    flex-shrink: 0;
+}
+
+.hero ul {
+    display: flex;
+    flex-shrink: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 25px;
+}
+
+.hero a {
+    text-decoration: none;
+}
+
+
+/* Body Styles */
+.hero .body {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    padding: 95px 0px 120px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .text {
+    padding: 0px 30px 10px 30px;
+}
+
+.hero .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-text {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.subtext {
+    margin-bottom: auto;
+}
+
+.hero button {
+    color: #F9FAF8;
+    background-color: #3882F6;
+    font-size: 18px;
+    border: none;
+    font-weight: 550;
+    width: 130px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+.main-image {
+    display: flex;
+    color: #F9FAF8;
+    background-color: rgb(110,116,124);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .text,
+.main-image {
+    flex-shrink: 0;
+    height: 240px;
+    width: 525px;
+}
+
+
+/* Header & Body Styles */
+.hero a,
+.subtext {
+    font-size: 18px;
+    color: #E5E7EB;
+}
