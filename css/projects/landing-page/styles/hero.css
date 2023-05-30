@@ -1,12 +1,12 @@
 /* Header Styles */
-.hero .header {
+.hero-header {
     display: flex;
     padding: 20px 15%;
     justify-content: space-between;
     align-items: center;
 }
 
-.logo {
+.header-logo {
     color: #F9FAF8;
     font-size: 24px;
     font-weight: bold;
@@ -32,7 +32,7 @@
 }
 
 /* Body Styles */
-.hero .body {
+.hero-body {
     display: flex;
     flex-wrap: wrap;
     height: 100%;
@@ -41,11 +41,11 @@
     align-items: center;
 }
 
-.hero .text {
+.body-text {
     padding: 0px 30px 10px 30px;
 }
 
-.hero .text {
+.body-text {
     display: flex;
     flex-direction: column;
 }
@@ -56,7 +56,7 @@
     color: #F9FAF8;
 }
 
-.subtext {
+.secondary-text {
     margin-bottom: auto;
 }
 
@@ -80,7 +80,7 @@
     align-items: center;
 }
 
-.hero .text,
+.body-text,
 .main-image {
     flex-shrink: 0;
     height: 240px;
@@ -90,7 +90,7 @@
 
 /* Header & Body Styles */
 .hero a,
-.subtext {
+.secondary-text {
     font-size: 18px;
     color: #E5E7EB;
 }
