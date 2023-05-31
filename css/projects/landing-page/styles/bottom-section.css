@@ -1,3 +1,16 @@
 .bottom-section {
+    flex-direction: column;
     background-color: white;
+}
+
+.call-to-action {
+    height: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    color: white;
 }
