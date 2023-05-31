@@ -1,7 +1,8 @@
-/* Universal Styles */
+/* Call to Action & Footer Styles */
 .bottom-section {
     flex-direction: column;
     background-color: white;
+    flex-shrink: 0;
 }
 
 
@@ -16,13 +17,22 @@
 .call-container {
     display: flex;
     background-color: #3882F6;
-    gap: 150px;
-    padding: 50px 120px;
     border-radius: 10px;
+    width: 1012px;
+    gap: 15px;
+    margin: 92px 50px;
+    padding: 50px 116.5px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.call-text {
+    min-width: 275px;
 }
 
 .call-main-text {
-    font-size: 22px;
+    font-size: 23.75px;
     font-weight: bolder;
     color: #F9FAF8;
 }
