@@ -9,23 +9,22 @@ html {
   }
 
 body {
+    background-color: #1F2937;
     font-family: "Roboto", sans-serif;
     display: flex;
     flex-direction: column;
     height: 100vh;
     margin: 0;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .hero,
 .introduction,
-.information,
-.call-to-action,
-.footer {
+.image-captions,
+.quote,
+.bottom-section {
     display: flex;
     flex: 1;
-
-    border: 1px solid blue; /* Debugging */
 }
 
 .hero,
