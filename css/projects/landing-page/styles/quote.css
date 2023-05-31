@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: column;
     max-width: 775px;
+    margin: 118px 50px;
 }
 
 .statement {
@@ -18,7 +19,7 @@
 }
 
 .author {
-    padding-right: 25px;
+    padding-right: 35px;
     text-align: end;
     font-size: 23.5px;
     font-weight: bold;
