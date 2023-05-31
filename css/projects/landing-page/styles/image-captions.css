@@ -1,10 +1,12 @@
 /* Header & Body Styles */
 .image-captions {
     flex-direction: column;
+    background-color: white;
     align-items: center;
     padding: 50px 0px;
     gap: 52px;
 }
+
 
 /* Header Styles */
 .image-captions-header {
@@ -13,12 +15,14 @@
     font-weight: 700;
 }
 
+
 /* Body Styles */
 .information {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 55px;
+    margin: 0px 50px;
 }
 
 .box {
