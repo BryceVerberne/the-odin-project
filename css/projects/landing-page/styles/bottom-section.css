@@ -1,12 +1,51 @@
+/* Universal Styles */
 .bottom-section {
     flex-direction: column;
     background-color: white;
 }
 
+
+/* Call to Action Styles */
 .call-to-action {
+    display: flex;
     height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
+.call-container {
+    display: flex;
+    background-color: #3882F6;
+    gap: 150px;
+    padding: 50px 120px;
+    border-radius: 10px;
+}
+
+.call-main-text {
+    font-size: 22px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+
+.call-secondary-text {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.bottom-section button {
+    color: #F9FAF8;
+    background-color: #3882F6;
+    flex-shrink: 0;
+    font-size: 18px;
+    border: 2.5px solid #F9FAF8;
+    font-weight: 550;
+    width: 130px;
+    height: 40px;
+    border-radius: 8px;
+}
+
+
+/* Footer Styles */
 .footer {
     display: flex;
     justify-content: center;
