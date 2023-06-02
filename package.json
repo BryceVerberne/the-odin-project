@@ -1,0 +1,15 @@
+{
+  "name": "theodinproject",
+  "version": "1.0.0",
+  "description": "Hello, world! Welcome to my web development learning repository. As I journey through the realms of web development, I'll be documenting my progress here. This repository is my sandbox where I'll be experimenting with HTML, CSS, JavaScript, and Node.js.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.41.0"
+  }
+}
