@@ -5,7 +5,9 @@ let result;
 
 // Edit between these lines
 // =================================
-result = "a" + "b";
+result = a + b; // Concatenation was being performed since we were working
+                // with string variables. I removed the quotations, so 
+                // arithmetic now functions as expected. 
 // =================================
 
 if(result === 2) {
