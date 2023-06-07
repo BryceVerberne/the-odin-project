@@ -10,26 +10,22 @@
   
   After making your prediction, press 'Run' at the top and look at the output in the console. If you were surprised by anything, go back and look at the code to see what's going on.
 
+  const birthYear = 1948;
+  const thisYear = 1965;
+  const firstName = "Carlos";
+  const lastName = "Stevenson";
+
+  const greeting = "Hello! My name is " + firstName + " " + lastName + " and I am " + (thisYear - birthYear) + " years old.";
+
+  console.log(greeting);
 */
-
-// code to be deleted
-const birthYear = 1948;
-const thisYear = 1965;
-const firstName = "Carlos";
-const lastName = "Stevenson";
-
-const greeting = "Hello! My name is " + firstName + " " + lastName + " and I am " + (thisYear - birthYear) + " years old.";
-
-console.log(greeting);
 
 /*
 
-  ===== Step 2: =====
-  Once you understand the code snippet above, delete it. Then, using the following instructions, recreate the snippet on your own under "Your code goes here".
-	
+  ===== Step 2: =====	
   ---------------------------------------------------------------
 	
-  1. Create 4 variables: firstName, lastName, currentYear, and birthYear
+  1. Create 4 variables: firstName, lastName, thisYear, and birthYear
 
   2. Create a 5th variable, greeting, that is constructed from the previous 4
   (it should contain a greeting with the person's full name and their age)
@@ -53,37 +49,17 @@ console.log(greeting);
 */
 
 //===== Your code goes here =================
+const firstName = "Carlos";
+const lastName = "Stevenson";
+const thisYear = 1965;
+const birthYear = 1948;
 
+const age = thisYear - birthYear;
+const fullName = firstName + " " + lastName;
 
-/*
+let greeting = "Hello! My name is " + fullName + " and I am " + age + " years old.";
 
-  ===== Step 3: =====
-  Now that you have the code working again, let's go back over it and, using the instructions below, edit it to make it easier to read.
-
-  ---------------------------------------------------------------
-
-  1. Go to "Testing your code" below
-
-  2. Comment out the lines under "Test Step 2"
-
-  3. Uncomment the lines under "Test Step 3" (Notice the difference between them)
-
-  4. Go back to your code and create 2 new variables: "fullName" and "age"
-
-  Do NOT simply type the full name and age into the new variables. Set them using the pre-existing variables, with the calculations that are currently inside of greeting.
-
-  5. Edit the greeting string to use fullName and age instead of the other 4 variables. (the greeting should then look something like: "Hello, my name is " + fullName)
-
-  6. Press 'Run' to ensure your code still works (output should be unchanged)
-
-  ---------------------------------------------------------------
-
-  ===== Testing your code =====
-  - Do NOT edit this section until told to do so. 
-
-  - Make sure one and only one of these test steps are commented out at a time
-
-*/
+console.log(greeting);
 
 // Test Step 2: 
 export {
@@ -95,15 +71,3 @@ export {
   };
 
 export const testGroup = "a";
-
-// Test Step 3: (Don't forget to comment out lines under Test Step 2)
-
-// module.exports = {
-// 	testGroup: "b",
-// 	greeting,
-// 	birthYear,
-// 	thisYear,
-// 	firstName,
-// 	lastName,
-// 	fullName,
-// 	age
