@@ -13,6 +13,7 @@ let result = add7(userNumber);
 
 alert(`${userNumber} + 7 = ${result}`)
 
+
 /*
     2.)
     Write a function called `multiply` that takes 2 numbers and returns their
@@ -22,7 +23,7 @@ function multiply(numOne, numTwo) {
     return numOne * numTwo;
 } 
 
-alert("Provide me with two numbers and I'll give you their product.");
+alert("Provide me with two numbers and I'll return their product.");
 const numOne = prompt("Value One");
 const numTwo = prompt("Value Two");
 result = multiply(numOne, numTwo);
@@ -37,12 +38,11 @@ alert(`${numOne} * ${numTwo} = ${result}`);
     strings that are lowercase, uppercase, or both. 
 */
 function capitalize(userString) {
-    const modifiedString = userString.slice(1,userString.length);
-    return userString.charAt(0).toUpperCase() + modifiedString;
+    return userString.charAt(0).toUpperCase() + userString.slice(1,userString.length);
 }
 
 alert("Provide me with a string and I'll make it look good for yah!");
-const userString = prompt("Provide a string");
+let userString = prompt("Provide a string");
 result = capitalize(userString);
 
 alert(`Improved String:\n${capitalize(result)}`);
@@ -53,3 +53,12 @@ alert(`Improved String:\n${capitalize(result)}`);
     Write a function called `lastLetter` that takes a string and returns the
     very last letter of that string.
 */
+function lastLetter(userString) {
+    return userString.charAt(userString.length - 1);
+}
+
+alert("Provide me with a string and I'll return the last letter.");
+userString = prompt("Provide a string.");
+result = lastLetter(userString);
+
+alert(`The last letter: ${result}`);
