@@ -36,6 +36,16 @@ alert(`${numOne} * ${numTwo} = ${result}`);
     string with only the first letter capitalized. Make sure that it can take
     strings that are lowercase, uppercase, or both. 
 */
+function capitalize(userString) {
+    const modifiedString = userString.slice(1,userString.length);
+    return userString.charAt(0).toUpperCase() + modifiedString;
+}
+
+alert("Provide me with a string and I'll make it look good for yah!");
+const userString = prompt("Provide a string");
+result = capitalize(userString);
+
+alert(`Improved String:\n${capitalize(result)}`);
 
 
 /*
