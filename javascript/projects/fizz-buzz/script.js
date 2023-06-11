@@ -7,7 +7,7 @@
     "fizzbuzz".
 */
 
-// Task: Write a program that outputs the first 100 FizzBuzz numbers.
+// Task: Write a program that outputs the FizzBuzz numbers up to an amount specified by the user.
 let userCap = prompt("How many numbers would you like FizzBuzz to count up to?\nEnter a numerical value:");
 
 for (let i = 1; i <= userCap; ++i) {
