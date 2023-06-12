@@ -1,8 +1,9 @@
+let options = ['rock', 'paper', 'scissors'];
 let computerSelection;
 let playerSelection;
 let computerPoints = 0;
 let playerPoints = 0;
-let round = 0;
+let round = 1;
 
 // Add section that determines if the player has won, lost, or tied.
 function game(playerSelection, computerSelection) {
@@ -69,24 +70,10 @@ function game(playerSelection, computerSelection) {
 }
 
 // Randomly return either 'rock', 'paper', or 'scissors' for computer's choice. 
-function getComputerChoice() {
-    let randomNum = Math.floor(Math.random() * 3); // Random number between 0, 1, or 2
-
-    if (randomNum === 1) {
-        return "rock";
-    }
-    else if (randomNum === 2) {
-        return "paper";
-    }
-    else {
-        return "scissors";
-    }
-}
+let getComputerChoice = () => options[Math.floor(Math.random() * 3)]; // Random number between 0, 1, or 2
 
 // Prompt player for choice of either 'rock', 'paper', or 'scissors'.
-function getPlayerChoice() {
-    return prompt("Choose your weapon!").toLowerCase();
-}
+let getPlayerChoice = () => prompt("Choose your weapon!").toLowerCase();
 
 /*
 // Dramatic introduction
@@ -98,7 +85,7 @@ alert("Prepare yourself, brave player. The fate of the world rests in your hands
 */
 
 while((playerPoints < 5) && (computerPoints < 5)) {
-    alert(`ROUND ${(round+1)}`);
+    alert(`ROUND ${round}`);
 
     playerSelection = getPlayerChoice();
     computerSelection = getComputerChoice();
