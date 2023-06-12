@@ -107,6 +107,26 @@ function playRound() {
 
     game(playerSelection, computerSelection);
 }
+
+// Determine whether or not the player wishes to go again.
+function playAgain() {
+    let newGame;
+
+    newGame = prompt("Warrior, your battle was fierce and memorable. Will you return to the arena" + 
+                  " for another round of Rock, Paper, Scissors? Type 'Yes' to continue, or" + 
+                  "'No' to retire. The choice is yours.").toLowerCase();
+
+    if (newGame === 'yes') {
+        console.log("Excellent! Your courage is commendable. Prepare yourself, the next round" + 
+                    " of Rock, Paper, Scissors begins now!");
+    }
+    else {
+        console.log("Your decision is respected, warrior. Rest and rejuvenate. The world of Rock," +
+                    " Paper, Scissors will await your return.");
+    }
+
+    return newGame;
+}
 // ---------------------------------------------------------------------------------------------
 
 // dramaticIntroduction();
@@ -127,16 +147,5 @@ while (play === 'yes') {
                     " when they fall. The world awaits your triumphant return!");
     }
 
-    play = prompt("Warrior, your battle was fierce and memorable. Will you return to the arena" + 
-                    " for another round of Rock, Paper, Scissors? Type 'Yes' to continue, or" + 
-                    "'No' to retire. The choice is yours.").toLowerCase();
-
-    if (play === 'yes') {
-        console.log("Excellent! Your courage is commendable. Prepare yourself, the next round" + 
-                    " of Rock, Paper, Scissors begins now!");
-    }
-    else {
-        console.log("Your decision is respected, warrior. Rest and rejuvenate. The world of Rock," +
-                    " Paper, Scissors will await your return.");
-    }
+    play = playAgain();
 }
