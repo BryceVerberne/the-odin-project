@@ -2,13 +2,13 @@
 // ---------------------------------------------------------------------------------------------
 // Here we initialize our variables. These are used to track the state of the game.
 
-let computerSelection;                       // The choice of the computer in each round (rock, paper, or scissors)
-let playerSelection;                         // The choice of the player in each round (rock, paper, or scissors)
-let computerPoints = 0;                      // The total score of the computer
-let playerPoints = 0;                        // The total score of the player
-let round = 1;                               // Current round of the game
-let play = 'yes';                            // A variable to check if the game should continue or not
-let options = ['rock', 'paper', 'scissors']; // Array containing possible game options
+let computerSelection;                         // The choice of the computer in each round (rock, paper, or scissors)
+let playerSelection;                           // The choice of the player in each round (rock, paper, or scissors)
+let computerPoints = 0;                        // The total score of the computer
+let playerPoints = 0;                          // The total score of the player
+let round = 1;                                 // Current round of the game
+let play = 'yes';                              // A variable to check if the game should continue or not
+const options = ['rock', 'paper', 'scissors']; // Array containing possible game options
 
 
 // Functions
@@ -138,6 +138,7 @@ function playAgain() {
     return newGame;
 }
 
+
 // Game Loop
 // ---------------------------------------------------------------------------------------------
 // The game loop is where the game actually starts and keeps running until the game finishes.
@@ -162,6 +163,10 @@ while (play === 'yes') {
                     " champions are not defined by their victories, but by how they can recover" +
                     " when they fall. The world awaits your triumphant return!");
     }
+
+    round = 1;
+    playerPoints = 0;
+    computerPoints = 0;
 
     play = playAgain();
 }
