@@ -5,6 +5,8 @@ let computerPoints = 0;
 let playerPoints = 0;
 let round = 1;
 
+// Functions
+// ---------------------------------------------------------------------------------------------
 // Print dramatic introduction
 function dramaticIntroduction() {
     alert("In a world where the balance of power is determined by the simple game of Rock, Paper, Scissors...");
@@ -91,15 +93,20 @@ function game(playerSelection, computerSelection) {
     alert(`Score:\nPlayer: ${playerPoints}  Computer: ${computerPoints}`);
 }
 
-while((playerPoints < 5) && (computerPoints < 5)) {
+// Display round number, get computer & player choices, & decide the winner.
+function playRound() {
     alert(`ROUND ${round}`);
+    ++round;
 
     playerSelection = getPlayerChoice();
     computerSelection = getComputerChoice();
 
     game(playerSelection, computerSelection);
+}
+// ---------------------------------------------------------------------------------------------
 
-    ++round;
+while((playerPoints < 5) && (computerPoints < 5)) {
+    playRound();
 }
 
 if (playerPoints === 5) {
