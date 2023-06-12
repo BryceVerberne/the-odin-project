@@ -5,6 +5,28 @@ let computerPoints = 0;
 let playerPoints = 0;
 let round = 1;
 
+// Print dramatic introduction
+function dramaticIntroduction() {
+    alert("In a world where the balance of power is determined by the simple game of Rock, Paper, Scissors...");
+
+    alert("Two formidable opponents are about to face off in a battle of wits, strategy, and chance...");
+
+    alert("One, a mere mortal, armed with intuition and free will. The other, a relentless machine, devoid of " + 
+          "emotion and driven by cold, hard logic...");
+      
+    alert("In this epic showdown, only one can emerge victorious. Will it be the human spirit or the precision " + 
+          "of the machine? The first to claim five victories will be declared the champion.");
+
+    alert("Prepare yourself, brave player. The fate of the world rests in your hands. Choose wisely... The game " + 
+          "of Rock, Paper, Scissors begins NOW!");
+}
+
+// Randomly return either 'rock', 'paper', or 'scissors' for computer's choice. 
+let getComputerChoice = () => options[Math.floor(Math.random() * 3)]; // Random number between 0, 1, or 2
+
+// Prompt player for choice of either 'rock', 'paper', or 'scissors'.
+let getPlayerChoice = () => prompt("Choose your weapon!").toLowerCase();
+
 // Add section that determines if the player has won, lost, or tied.
 function game(playerSelection, computerSelection) {
     let win = "Against all odds, you've triumphed over the machine!";
@@ -68,28 +90,6 @@ function game(playerSelection, computerSelection) {
 
     alert(`Score:\nPlayer: ${playerPoints}  Computer: ${computerPoints}`);
 }
-
-// Randomly return either 'rock', 'paper', or 'scissors' for computer's choice. 
-let getComputerChoice = () => options[Math.floor(Math.random() * 3)]; // Random number between 0, 1, or 2
-
-// Prompt player for choice of either 'rock', 'paper', or 'scissors'.
-let getPlayerChoice = () => prompt("Choose your weapon!").toLowerCase();
-
-/*
-// Dramatic introduction
-alert("In a world where the balance of power is determined by the simple game of Rock, Paper, Scissors...");
-
-alert("Two formidable opponents are about to face off in a battle of wits, strategy, and chance...");
-
-alert("One, a mere mortal, armed with intuition and free will. The other, a relentless machine, devoid of " + 
-      "emotion and driven by cold, hard logic...");
-      
-alert("In this epic showdown, only one can emerge victorious. Will it be the human spirit or the precision " + 
-      "of the machine? The first to claim five victories will be declared the champion.");
-
-alert("Prepare yourself, brave player. The fate of the world rests in your hands. Choose wisely... The game " + 
-      "of Rock, Paper, Scissors begins NOW!");
-*/
 
 while((playerPoints < 5) && (computerPoints < 5)) {
     alert(`ROUND ${round}`);
