@@ -1,14 +1,21 @@
-let computerSelection;
-let playerSelection;
-let computerPoints = 0;
-let playerPoints = 0;
-let round = 1;
-let play = 'yes';
-let options = ['rock', 'paper', 'scissors'];
+// Global Variables
+// ---------------------------------------------------------------------------------------------
+// Here we initialize our variables. These are used to track the state of the game.
+
+let computerSelection;                       // The choice of the computer in each round (rock, paper, or scissors)
+let playerSelection;                         // The choice of the player in each round (rock, paper, or scissors)
+let computerPoints = 0;                      // The total score of the computer
+let playerPoints = 0;                        // The total score of the player
+let round = 1;                               // Current round of the game
+let play = 'yes';                            // A variable to check if the game should continue or not
+let options = ['rock', 'paper', 'scissors']; // Array containing possible game options
+
 
 // Functions
 // ---------------------------------------------------------------------------------------------
-// Print dramatic introduction
+// We define several functions to control the game flow, calculate the results, and interact with the player.
+
+// This function prints a dramatic introduction message to the console.
 function dramaticIntroduction() {
     console.log("In a world where the balance of power is determined by the simple game of" + 
                 " Rock, Paper, Scissors...");
@@ -27,13 +34,14 @@ function dramaticIntroduction() {
                 " wisely... The game of Rock, Paper, Scissors begins NOW!");
 }
 
-// Randomly return either 'rock', 'paper', or 'scissors' for computer's choice. 
+// This function randomly returns the choice of the computer (either 'rock', 'paper', or 'scissors').
 let getComputerChoice = () => options[Math.floor(Math.random() * 3)]; // Random number between 0, 1, or 2
 
-// Prompt player for choice of either 'rock', 'paper', or 'scissors'.
+// This function prompts the player for their choice (either 'rock', 'paper', or 'scissors').
 let getPlayerChoice = () => prompt("Choose your weapon!").toLowerCase();
 
-// Add section that determines if the player has won, lost, or tied.
+// This function determines if the player has won, lost, or tied in a round.
+// It also updates the score accordingly and displays the current score.
 function game(playerSelection, computerSelection) {
     let win = "Against all odds, you've triumphed over the machine!";
     let loss = "Alas, the machine has bested you this time."
@@ -97,7 +105,8 @@ function game(playerSelection, computerSelection) {
     console.log(`Score:\nPlayer: ${playerPoints}  Computer: ${computerPoints}`);
 }
 
-// Display round number, get computer & player choices, & decide the winner.
+// This function represents a single round of the game. 
+// It gets the choices from the player and computer and determines the winner.
 function playRound() {
     console.log(`ROUND ${round}`);
     ++round;
@@ -108,7 +117,8 @@ function playRound() {
     game(playerSelection, computerSelection);
 }
 
-// Determine whether or not the player wishes to go again.
+// This function asks the player if they want to play another game after a game has finished.
+// It returns the player's answer.
 function playAgain() {
     let newGame;
 
@@ -127,15 +137,21 @@ function playAgain() {
 
     return newGame;
 }
+
+// Game Loop
 // ---------------------------------------------------------------------------------------------
+// The game loop is where the game actually starts and keeps running until the game finishes.
 
-// dramaticIntroduction();
+dramaticIntroduction();
 
+// If the player wants to continue, and no one has reached 5 points, continue the game.
 while (play === 'yes') {
     while ((playerPoints < 5) && (computerPoints < 5)) {
         playRound();
     }
     
+    // If the player or the computer has reached 5 points, declare the winner and ask if the player wants to play again.
+    // If the player wants to play again, reset the points.
     if (playerPoints === 5) {
         console.log("Victory! You've proven yourself as the ultimate champion, outsmarting the" + 
                     " machine in a thrilling contest of Rock, Paper, Scissors. The world cheers" +
