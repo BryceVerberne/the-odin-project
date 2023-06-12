@@ -2,6 +2,7 @@ let computerSelection;
 let playerSelection;
 let computerPoints = 0;
 let playerPoints = 0;
+let round = 0;
 
 // Add section that determines if the player has won, lost, or tied.
 function game(playerSelection, computerSelection) {
@@ -63,6 +64,8 @@ function game(playerSelection, computerSelection) {
     else {
         alert(`${playerSelection}... What is this witchcraft?!`);
     }
+
+    alert(`Score:\nPlayer: ${playerPoints}  Computer: ${computerPoints}`);
 }
 
 // Randomly return either 'rock', 'paper', or 'scissors' for computer's choice. 
@@ -94,11 +97,13 @@ alert("In this epic showdown, only one can emerge victorious. Will it be the hum
 alert("Prepare yourself, brave player. The fate of the world rests in your hands. Choose wisely... The game of Rock, Paper, Scissors begins NOW!");
 */
 
-for (let i = 0; i < 5; ++i) {
-    alert(`ROUND ${(i+1)}`);
+while((playerPoints < 5) && (computerPoints < 5)) {
+    alert(`ROUND ${(round+1)}`);
 
     playerSelection = getPlayerChoice();
     computerSelection = getComputerChoice();
 
     game(playerSelection, computerSelection);
+
+    ++round;
 }
