@@ -1,9 +1,10 @@
-let options = ['rock', 'paper', 'scissors'];
 let computerSelection;
 let playerSelection;
 let computerPoints = 0;
 let playerPoints = 0;
 let round = 1;
+let play = 'yes';
+let options = ['rock', 'paper', 'scissors'];
 
 // Functions
 // ---------------------------------------------------------------------------------------------
@@ -105,15 +106,29 @@ function playRound() {
 }
 // ---------------------------------------------------------------------------------------------
 
-while((playerPoints < 5) && (computerPoints < 5)) {
-    playRound();
-}
+// dramaticIntroduction();
 
-if (playerPoints === 5) {
-    alert("Victory! You've proven yourself as the ultimate champion, outsmarting the machine in a thrilling " +
-          "contest of Rock, Paper, Scissors. The world cheers for its hero!");
-}
-else {
-    alert("Defeat... The machine has claimed victory this time. But remember, true champions are not defined " + 
-    "by their victories, but by how they can recover when they fall. The world awaits your triumphant return!");
+while (play === 'yes') {
+    while ((playerPoints < 5) && (computerPoints < 5)) {
+        playRound();
+    }
+    
+    if (playerPoints === 5) {
+        alert("Victory! You've proven yourself as the ultimate champion, outsmarting the machine in a thrilling " +
+              "contest of Rock, Paper, Scissors. The world cheers for its hero!");
+    }
+    else {
+        alert("Defeat... The machine has claimed victory this time. But remember, true champions are not defined " + 
+              "by their victories, but by how they can recover when they fall. The world awaits your triumphant return!");
+    }
+
+    play = prompt("Warrior, your battle was fierce and memorable. Will you return to the arena for another round of" + 
+                  " Rock, Paper, Scissors? Type 'Yes' to continue, or 'No' to retire. The choice is yours.").toLowerCase();
+
+    if (play === 'yes') {
+        alert( "Excellent! Your courage is commendable. Prepare yourself, the next round of Rock, Paper, Scissors begins now!");
+    }
+    else {
+        alert("Your decision is respected, warrior. Rest and rejuvenate. The world of Rock, Paper, Scissors will await your return.");
+    }
 }
