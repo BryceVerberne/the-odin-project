@@ -78,10 +78,17 @@ let getPlayerChoice = () => prompt("Choose your weapon!").toLowerCase();
 /*
 // Dramatic introduction
 alert("In a world where the balance of power is determined by the simple game of Rock, Paper, Scissors...");
+
 alert("Two formidable opponents are about to face off in a battle of wits, strategy, and chance...");
-alert("One, a mere mortal, armed with intuition and free will. The other, a relentless machine, devoid of emotion and driven by cold, hard logic...");
-alert("In this epic showdown, only one can emerge victorious. Will it be the human spirit or the precision of the machine? The first to claim five victories will be declared the champion.");
-alert("Prepare yourself, brave player. The fate of the world rests in your hands. Choose wisely... The game of Rock, Paper, Scissors begins NOW!");
+
+alert("One, a mere mortal, armed with intuition and free will. The other, a relentless machine, devoid of " + 
+      "emotion and driven by cold, hard logic...");
+      
+alert("In this epic showdown, only one can emerge victorious. Will it be the human spirit or the precision " + 
+      "of the machine? The first to claim five victories will be declared the champion.");
+
+alert("Prepare yourself, brave player. The fate of the world rests in your hands. Choose wisely... The game " + 
+      "of Rock, Paper, Scissors begins NOW!");
 */
 
 while((playerPoints < 5) && (computerPoints < 5)) {
@@ -93,4 +100,13 @@ while((playerPoints < 5) && (computerPoints < 5)) {
     game(playerSelection, computerSelection);
 
     ++round;
+}
+
+if (playerPoints === 5) {
+    alert("Victory! You've proven yourself as the ultimate champion, outsmarting the machine in a thrilling " +
+          "contest of Rock, Paper, Scissors. The world cheers for its hero!");
+}
+else {
+    alert("Defeat... The machine has claimed victory this time. But remember, true champions are not defined " + 
+    "by their victories, but by how they can recover when they fall. The world awaits your triumphant return!");
 }
