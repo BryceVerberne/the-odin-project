@@ -1,9 +1,10 @@
-const removeFromArray = function(array, element) {
+const removeFromArray = function(array, ...element) {
     // Search array for specified element and, if found, remove it
-    for (let i = 0; i < array.length; ++i) {
-        if (array[i] == element) {
-            array.splice(i,1);
-            return array;
+    for (let i = 0; i < element.length; ++i) {
+        for (let j = 0; j < array.length; ++j) {
+            if (array[j] === element[i]) {
+                array.splice(j,1);
+            }
         }
     }
 
