@@ -25,12 +25,23 @@ console.log(document.links); // Get all the links in your HTML document
 
 
 // GETELEMENTBYID //
-let headerTitle = document.getElementById('header-title');
-
 /*
+let headerTitle = document.getElementById('main-header');
+headerTitle.style.borderBottom = 'solid 3px #000';
+
 console.log(document.getElementById('header-title')); // This pulls whatever element that is using this ID and logs it.
                                                       // We can also assign the value it returns to a variable. 
 
 headerTitle.innerHTML = '<h3>Hello</h3>'; // This changes the text of an element along with the tags associated with it to whatever specified.
 */
 
+// GETELEMENTSBYCLASSNAME //
+let items = document.getElementsByClassName('list-group-item');
+console.log(items);
+console.log(items[0]);
+items[1].textContent = 'Hello 2';
+items[1].style.fontWeight = 'bold';
+
+for (let i = 0; i < items.length; ++i) {
+    items[i].style.backgroundColor = 'gray';
+}
