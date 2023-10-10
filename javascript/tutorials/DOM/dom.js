@@ -21,7 +21,7 @@
 // Note: It looks like we are being given arrays but they are not! We are receiving HTMLCollection, and are different from your standard array
 
 
-// GETELEMENTBYID //
+// --- Get Elements by ID ---
 // let headerTitle = document.getElementById('main-header');
 // headerTitle.style.borderBottom = 'solid 3px #000';
 
@@ -31,7 +31,7 @@
 // headerTitle.innerHTML = '<h3>Hello</h3>'; // This changes the text of an element along with the tags associated with it to whatever specified.
 
 
-// GETELEMENTSBYCLASSNAME //
+// --- Get Elements by Class Name ---
 // let items = document.getElementsByClassName('list-group-item');
 // console.log(items);
 // console.log(items[0]);
@@ -43,7 +43,7 @@
 // }
 
 
-// GETELEMENTSBYTAGNAME //
+// --- Get Element by Tage Name ---
 // let tagItems = document.getElementsByTagName('li');
 // console.log(tagItems);
 
@@ -52,12 +52,71 @@
 // }
 
 
-// QUERYSELECTOR //
-let header = document.querySelector('#main-header');
-header.style.borderBottom = 'solid 4px black';
+// --- Query Selector ---
+// let header = document.querySelector('#main-header');
+// header.style.borderBottom = 'solid 4px black';
 
-let input = document.querySelector('input');
-input.value = 'Hello World';
+// let input = document.querySelector('input');
+// input.value = 'Hello World';
 
-let submit = document.querySelector('input[type="submit"]');
-submit.value = "SEND";
+// let submit = document.querySelector('input[type="submit"]');
+// submit.value = "SEND";
+
+// let item = document.querySelector('.list-group-item');
+// item.style.color = 'red';
+
+// let lastItem = document.querySelector('.list-group-item:last-child');
+// lastItem.style.color = 'blue';
+
+
+// --- Query Select All ---
+// let titles = document.querySelectorAll('.title');
+// console.log(titles);
+// titles[0].textContent = 'Hello';
+
+// let odd = document.querySelectorAll('li:nth-child(odd)');
+// for (let i = 0; i < odd.length; ++i) {
+//     odd[i].style.backgroundColor = 'gray';
+// }
+
+
+// ^^ PART 1 ^^
+
+
+// --- Part 2 ---
+// --- Traversing The DOM ---
+// let itemList = document.querySelector('#items');
+
+// itemList.parentNode.style.backgroundColor = 'gray';
+// console.log(itemList);
+// console.log(itemList.parentNode);
+// console.log(itemList.parentNode.parentNode);
+// console.log(itemList.parentNode.parentNode.parentNode);
+
+
+// --- Child Nodes ---
+// console.log(itemList.children);
+// console.log(itemList.children[1]);
+
+
+// --- First Child ---
+// itemList.firstElementChild.style.backgroundColor = 'gray';
+
+
+// --- Next Sibling ---
+// itemList.firstElementChild.nextElementSibling.textContent = 'Hi!';
+
+// --- Previous Sibling ---
+// itemList.children[2].previousElementSibling.style.backgroundColor = 'gray';
+
+// --- Create Element ---
+let newDiv = document.createElement('div');
+
+// Add Class
+newDiv.className = 'hello';
+
+// Add ID
+newDiv.id = 'howdy';
+
+// Setting a title
+newDiv.setAttribute('title', 'Hello div');
