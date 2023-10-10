@@ -120,3 +120,30 @@ newDiv.id = 'howdy';
 
 // Setting a title
 newDiv.setAttribute('title', 'Hello div');
+
+
+// Creating a Text Node
+let newDivText = document.createTextNode('Hello World');
+
+// Add text to div
+newDiv.appendChild(newDivText);
+
+let container = document.querySelector('header .container');
+let h1 = document.querySelector('header h1');
+
+container.insertBefore(newDiv, h1);
+
+
+// ^^ PART 2 ^^
+
+
+// --- Part 3 ---
+function buttonClick(e) {
+    console.log(e.target);
+    console.log(e.target.id);
+    console.log(e.target.className);
+    console.log(e.target.classList)
+}
+
+let button = document.getElementById('button');
+button.addEventListener('click', buttonClick);
