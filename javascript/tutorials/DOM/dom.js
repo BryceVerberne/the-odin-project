@@ -110,40 +110,66 @@
 // itemList.children[2].previousElementSibling.style.backgroundColor = 'gray';
 
 // --- Create Element ---
-let newDiv = document.createElement('div');
+// let newDiv = document.createElement('div');
 
 // Add Class
-newDiv.className = 'hello';
+// newDiv.className = 'hello';
 
 // Add ID
-newDiv.id = 'howdy';
+// newDiv.id = 'howdy';
 
 // Setting a title
-newDiv.setAttribute('title', 'Hello div');
+// newDiv.setAttribute('title', 'Hello div');
 
 
 // Creating a Text Node
-let newDivText = document.createTextNode('Hello World');
+// let newDivText = document.createTextNode('Hello World');
 
 // Add text to div
-newDiv.appendChild(newDivText);
+// newDiv.appendChild(newDivText);
 
-let container = document.querySelector('header .container');
-let h1 = document.querySelector('header h1');
+// let container = document.querySelector('header .container');
+// let h1 = document.querySelector('header h1');
 
-container.insertBefore(newDiv, h1);
+// container.insertBefore(newDiv, h1);
 
 
 // ^^ PART 2 ^^
 
 
 // --- Part 3 ---
-function buttonClick(e) {
-    console.log(e.target);
-    console.log(e.target.id);
-    console.log(e.target.className);
-    console.log(e.target.classList)
-}
+// --- Events ---
+// function buttonClick(e) {
+//     console.log(e.target);
+//     console.log(e.target.id);
+//     console.log(e.target.className);
+//     console.log(e.target.classList)
+// }
+
+// let button = document.getElementById('button');
+// button.addEventListener('click', buttonClick);
 
 let button = document.getElementById('button');
-button.addEventListener('click', buttonClick);
+let box = document.getElementById('box');
+// button.addEventListener('click', runEvent);
+// button.addEventListener('dblclick', runEvent);
+// button.addEventListener('mousedown', runEvent);
+
+// box.addEventListener('mouseenter', runEvent);
+// box.addEventListener('mouseleave', runEvent);
+
+// box.addEventListener('mouseover', runEvent);
+// box.addEventListener('mouseout', runEvent);
+
+// box.addEventListener('mousemove', runEvent);
+
+let itemInput = document.querySelector(`input[type="text"]`);
+let form = document.querySelector(`form`);
+
+itemInput.addEventListener(`keydown`, runEvent);
+
+function runEvent(e) {
+    console.log(`EVENT TYPE: ${e.type}`);
+
+    // document.body.style.backgroundColor = `rgb(${e.offsetX},${e.offsetY},40)`;
+}
