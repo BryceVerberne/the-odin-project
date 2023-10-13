@@ -165,11 +165,32 @@ let box = document.getElementById('box');
 
 let itemInput = document.querySelector(`input[type="text"]`);
 let form = document.querySelector(`form`);
+let select = document.querySelector('select');
 
-itemInput.addEventListener(`keydown`, runEvent);
+// itemInput.addEventListener(`keydown`, runEvent);
+// itemInput.addEventListener(`keyup`, runEvent);
+// itemInput.addEventListener(`keypress`, runEvent);
+
+// itemInput.addEventListener(`focus`, runEvent);
+// itemInput.addEventListener(`blur`, runEvent);
+
+// itemInput.addEventListener(`cut`, runEvent);
+// itemInput.addEventListener(`paste`, runEvent);
+
+// select.addEventListener('change', runEvent);
+// select.addEventListener('input', runEvent);
+
+itemInput.addEventListener(`input`, runEvent);
+
+form.addEventListener('submit', runEvent);
 
 function runEvent(e) {
+    // e.preventDefault();
     console.log(`EVENT TYPE: ${e.type}`);
 
+
+    // console.log(e.target.value);
+    // document.getElementById('output').innerHTML = `<h3>${e.target.value}</h3>`;
     // document.body.style.backgroundColor = `rgb(${e.offsetX},${e.offsetY},40)`;
 }
+
