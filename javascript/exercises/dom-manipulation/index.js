@@ -7,12 +7,12 @@ Add the following to the container class DOM:
   </div>
 */
 // Get the reference to the parent node & create the new element
-const container = document.getElementById('container');
-let content = document.createElement('div');
+const container = document.getElementById("container");
+let content = document.createElement("div");
 
 // Add a class & text to the new element
-content.className = 'content';
-content.textContent = 'This is the glorious text-content!';
+content.className = "content";
+content.textContent = "This is the glorious text-content!";
 
 // Append the element to the container parent node
 container.appendChild(content);
@@ -28,7 +28,25 @@ Make the following modifications to the container on the DOM:
 Hint for this one: after creating the <div> with createElement, append the <h1> and <p> to it before adding it to the container.
 */
 
-content = document.createElement('p');
+// Problem 1.
+// Create new element with a <p> tag
+content = document.createElement("p");
+
+// Modify the contents of the new element
 content.textContent = "Hey I'm red!";
-content.style.color = 'red';
+content.style.color = "red";
+
+// Append the element to the container parent node
+container.appendChild(content);
+
+
+// Problem 2.
+// Create new element with <h3> tag
+content = document.createElement("h3");
+
+// Modify the contents of the new element
+content.textContent = "I'm a blue h3!";
+content.style.color = "blue";
+
+// Append the element to the container parent node
 container.appendChild(content);
