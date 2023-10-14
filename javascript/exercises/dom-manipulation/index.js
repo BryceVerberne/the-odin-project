@@ -1,9 +1,21 @@
 /*
-Add the following to the DOM:
-<div class="content">
-    This is the glorious text-content!
-</div>
+Add the following to the container class DOM:
+  <div id="container">
+  	<div class="content">
+      This is the glorious text-content!
+    </div>
+  </div>
 */
+// Get the reference to the parent node & create the new element
+const container = document.getElementById('container');
+const content = document.createElement('div');
+
+// Add a class & text to the new element
+content.className = 'content';
+content.textContent = 'This is the glorious text-content!';
+
+// Append the element to the container parent node
+container.appendChild(content);
 
 
 /*
