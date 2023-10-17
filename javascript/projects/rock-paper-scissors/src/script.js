@@ -108,7 +108,7 @@ function game(playerSelection, computerSelection) {
 // This function represents a single round of the game. 
 // It gets the choices from the player and computer and determines the winner.
 function playRound() {
-    alert(`ROUND ${round}`);
+    console.log(`ROUND ${round}`);
     ++round;
 
     playerSelection = getPlayerChoice();
@@ -127,11 +127,11 @@ function playAgain() {
                   "'No' to retire. The choice is yours.").toLowerCase();
 
     if (newGame === 'yes') {
-        alert("Excellent! Your courage is commendable. Prepare yourself, the next round" + 
+        console.log("Excellent! Your courage is commendable. Prepare yourself, the next round" + 
                     " of Rock, Paper, Scissors begins now!");
     }
     else {
-        alert("Your decision is respected, warrior. Rest and rejuvenate. The world of Rock," +
+        console.log("Your decision is respected, warrior. Rest and rejuvenate. The world of Rock," +
                     " Paper, Scissors will await your return.");
     }
 
@@ -143,6 +143,7 @@ function playAgain() {
 // ---------------------------------------------------------------------------------------------
 // The game loop is where the game actually starts and keeps running until the game finishes.
 
+/*
 dramaticIntroduction();
 
 // If the player wants to continue, and no one has reached 5 points, continue the game.
@@ -154,12 +155,12 @@ while (play === 'yes') {
     // If the player or the computer has reached 5 points, declare the winner and ask if the player wants to play again.
     // If the player wants to play again, reset the points.
     if (playerPoints === 5) {
-        alert("Victory! You've proven yourself as the ultimate champion, outsmarting the" + 
+        console.log("Victory! You've proven yourself as the ultimate champion, outsmarting the" + 
                     " machine in a thrilling contest of Rock, Paper, Scissors. The world cheers" +
                     " for its hero!");
     }
     else {
-        alert("Defeat... The machine has claimed victory this time. But remember, true" + 
+        console.log("Defeat... The machine has claimed victory this time. But remember, true" + 
                     " champions are not defined by their victories, but by how they can recover" +
                     " when they fall. The world awaits your triumphant return!");
     }
@@ -170,3 +171,4 @@ while (play === 'yes') {
 
     play = playAgain();
 }
+*/
