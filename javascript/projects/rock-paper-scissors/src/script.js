@@ -108,7 +108,7 @@ function game(playerSelection, computerSelection) {
 // This function represents a single round of the game. 
 // It gets the choices from the player and computer and determines the winner.
 function playRound() {
-    console.log(`ROUND ${round}`);
+    alert(`ROUND ${round}`);
     ++round;
 
     playerSelection = getPlayerChoice();
@@ -127,11 +127,11 @@ function playAgain() {
                   "'No' to retire. The choice is yours.").toLowerCase();
 
     if (newGame === 'yes') {
-        console.log("Excellent! Your courage is commendable. Prepare yourself, the next round" + 
+        alert("Excellent! Your courage is commendable. Prepare yourself, the next round" + 
                     " of Rock, Paper, Scissors begins now!");
     }
     else {
-        console.log("Your decision is respected, warrior. Rest and rejuvenate. The world of Rock," +
+        alert("Your decision is respected, warrior. Rest and rejuvenate. The world of Rock," +
                     " Paper, Scissors will await your return.");
     }
 
@@ -154,12 +154,12 @@ while (play === 'yes') {
     // If the player or the computer has reached 5 points, declare the winner and ask if the player wants to play again.
     // If the player wants to play again, reset the points.
     if (playerPoints === 5) {
-        console.log("Victory! You've proven yourself as the ultimate champion, outsmarting the" + 
+        alert("Victory! You've proven yourself as the ultimate champion, outsmarting the" + 
                     " machine in a thrilling contest of Rock, Paper, Scissors. The world cheers" +
                     " for its hero!");
     }
     else {
-        console.log("Defeat... The machine has claimed victory this time. But remember, true" + 
+        alert("Defeat... The machine has claimed victory this time. But remember, true" + 
                     " champions are not defined by their victories, but by how they can recover" +
                     " when they fall. The world awaits your triumphant return!");
     }
