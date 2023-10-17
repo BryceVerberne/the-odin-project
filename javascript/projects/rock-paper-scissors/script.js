@@ -17,20 +17,20 @@ const options = ['rock', 'paper', 'scissors']; // Array containing possible game
 
 // This function prints a dramatic introduction message to the console.
 function dramaticIntroduction() {
-    console.log("In a world where the balance of power is determined by the simple game of" + 
+    alert("In a world where the balance of power is determined by the simple game of" + 
                 " Rock, Paper, Scissors...");
 
-    console.log("Two formidable opponents are about to face off in a battle of wits, strategy," + 
+    alert("Two formidable opponents are about to face off in a battle of wits, strategy," + 
                 " and chance...");
 
-    console.log("One, a mere mortal, armed with intuition and free will. The other, a relentless" +
+    alert("One, a mere mortal, armed with intuition and free will. The other, a relentless" +
                 " machine, devoid of emotion and driven by cold, hard logic...");
       
-    console.log("In this epic showdown, only one can emerge victorious. Will it be the human" + 
+    alert("In this epic showdown, only one can emerge victorious. Will it be the human" + 
                 " spirit or the precision of the machine? The first to claim five victories will" + 
                 " be declared the champion.");
 
-    console.log("Prepare yourself, brave player. The fate of the world rests in your hands. Choose" +
+    alert("Prepare yourself, brave player. The fate of the world rests in your hands. Choose" +
                 " wisely... The game of Rock, Paper, Scissors begins NOW!");
 }
 
@@ -50,16 +50,16 @@ function game(playerSelection, computerSelection) {
     if (playerSelection === 'rock') {
         switch (computerSelection) {
             case 'rock':
-                console.log(`Player: ${playerSelection}   Computer: ${computerSelection}\n${tie}`);
+                alert(`Player: ${playerSelection}   Computer: ${computerSelection}\n${tie}`);
                 break;
             
             case 'paper':
-                console.log(`Player: ${playerSelection}   Computer: ${computerSelection}\n${loss}`);
+                alert(`Player: ${playerSelection}   Computer: ${computerSelection}\n${loss}`);
                 ++computerPoints;
                 break;
 
             case 'scissors':
-                console.log(`Player: ${playerSelection}   Computer: ${computerSelection}\n${win}`);
+                alert(`Player: ${playerSelection}   Computer: ${computerSelection}\n${win}`);
                 ++playerPoints;
                 break;
         }
@@ -67,16 +67,16 @@ function game(playerSelection, computerSelection) {
     else if (playerSelection === 'paper') {
         switch (computerSelection) {
             case 'rock':
-                console.log(`Player: ${playerSelection}   Computer: ${computerSelection}\n${win}`);
+                alert(`Player: ${playerSelection}   Computer: ${computerSelection}\n${win}`);
                 ++playerPoints;
                 break;
             
             case 'paper':
-                console.log(`Player: ${playerSelection}   Computer: ${computerSelection}\n${tie}`);
+                alert(`Player: ${playerSelection}   Computer: ${computerSelection}\n${tie}`);
                 break;
 
             case 'scissors':
-                console.log(`Player: ${playerSelection}   Computer: ${computerSelection}\n${loss}`);
+                alert(`Player: ${playerSelection}   Computer: ${computerSelection}\n${loss}`);
                 ++computerPoints;
                 break;
         }
@@ -84,31 +84,31 @@ function game(playerSelection, computerSelection) {
     else if (playerSelection === 'scissors') {
         switch (computerSelection) {
             case 'rock':
-                console.log(`Player: ${playerSelection}   Computer: ${computerSelection}\n${loss}`);
+                alert(`Player: ${playerSelection}   Computer: ${computerSelection}\n${loss}`);
                 ++computerPoints;
                 break;
             
             case 'paper':
-                console.log(`Player: ${playerSelection}   Computer: ${computerSelection}\n${win}`);
+                alert(`Player: ${playerSelection}   Computer: ${computerSelection}\n${win}`);
                 ++playerPoints;
                 break;
 
             case 'scissors':
-                console.log(`Player: ${playerSelection}   Computer: ${computerSelection}\n${tie}`);
+                alert(`Player: ${playerSelection}   Computer: ${computerSelection}\n${tie}`);
                 break;
         }
     }
     else {
-        console.log(`${playerSelection}... What is this witchcraft?!`);
+        alert(`${playerSelection}... What is this witchcraft?!`);
     }
 
-    console.log(`Score:\nPlayer: ${playerPoints}  Computer: ${computerPoints}`);
+    alert(`Score:\nPlayer: ${playerPoints}  Computer: ${computerPoints}`);
 }
 
 // This function represents a single round of the game. 
 // It gets the choices from the player and computer and determines the winner.
 function playRound() {
-    console.log(`ROUND ${round}`);
+    alert(`ROUND ${round}`);
     ++round;
 
     playerSelection = getPlayerChoice();
@@ -127,11 +127,11 @@ function playAgain() {
                   "'No' to retire. The choice is yours.").toLowerCase();
 
     if (newGame === 'yes') {
-        console.log("Excellent! Your courage is commendable. Prepare yourself, the next round" + 
+        alert("Excellent! Your courage is commendable. Prepare yourself, the next round" + 
                     " of Rock, Paper, Scissors begins now!");
     }
     else {
-        console.log("Your decision is respected, warrior. Rest and rejuvenate. The world of Rock," +
+        alert("Your decision is respected, warrior. Rest and rejuvenate. The world of Rock," +
                     " Paper, Scissors will await your return.");
     }
 
@@ -154,12 +154,12 @@ while (play === 'yes') {
     // If the player or the computer has reached 5 points, declare the winner and ask if the player wants to play again.
     // If the player wants to play again, reset the points.
     if (playerPoints === 5) {
-        console.log("Victory! You've proven yourself as the ultimate champion, outsmarting the" + 
+        alert("Victory! You've proven yourself as the ultimate champion, outsmarting the" + 
                     " machine in a thrilling contest of Rock, Paper, Scissors. The world cheers" +
                     " for its hero!");
     }
     else {
-        console.log("Defeat... The machine has claimed victory this time. But remember, true" + 
+        alert("Defeat... The machine has claimed victory this time. But remember, true" + 
                     " champions are not defined by their victories, but by how they can recover" +
                     " when they fall. The world awaits your triumphant return!");
     }
