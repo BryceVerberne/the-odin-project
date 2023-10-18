@@ -26,6 +26,15 @@ body {
     margin: 0;
 }
 
+button {
+    border-radius: 10px;
+}
+
+h3 {
+    color: #f4f4f4;
+    text-align: center;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -43,20 +52,35 @@ body {
     border: 2px solid red;
 }
 
-.input {
+.body {
     display: flex;
     flex-grow: 1;
     justify-content: center;
     align-items: center;
     border-radius: 0px 0px 25px 25px;
+    gap: 10px;
 
     border: 2px solid blue;
 }
 
-.person {
-    border: 2px solid green;
+.human {
+    border: 1px solid green;
 }
 
 .computer {
-    border: 2px solid red;
+    border: 1px solid red;
+}
+
+.human,
+.computer {
+    padding: 10px;
+    border-radius: 20px;;
+    background-color: #3C3F41;
+}
+
+.rock img,
+.paper img,
+.scissors img {
+    height: 50px;
+    width: 50px;
 }
