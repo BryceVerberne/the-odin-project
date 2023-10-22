@@ -1,3 +1,4 @@
+/* General Formatting & Background Style */
 html {
     box-sizing: border-box;
 }
@@ -8,31 +9,14 @@ html {
     box-sizing: inherit;
 }
 
-html {
-    --s: 120px;
-    
-    --_g: radial-gradient(#0000 70%,#1a2030 71%);
-    background:
-      var(--_g),var(--_g) calc(var(--s)/2) calc(var(--s)/2),
-      conic-gradient(#0f9177 25%,#fdebad 0 50%,#d34434 0 75%,#b5d999 0);
-    background-size: var(--s) var(--s); 
-} 
-
+/* Interface Positioning */
 body {
+    background-color: #3C3F41;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-}
-
-button {
-    border-radius: 10px;
-}
-
-h3 {
-    color: #f4f4f4;
-    text-align: center;
 }
 
 .container {
@@ -57,12 +41,41 @@ h3 {
     flex-grow: 1;
     justify-content: center;
     align-items: center;
-    border-radius: 0px 0px 25px 25px;
-    gap: 10px;
+    flex-direction: column;
 
+
+    border-radius: 0px 0px 25px 25px;
     border: 2px solid blue;
 }
 
+.interface {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    border: 2px solid firebrick;
+}
+
+.score {
+    border: 2px solid red;
+    display: flex;
+}
+
+.input {
+    border: 2px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+/* Score Section Styles */
+
+
+
+/* Input Section Styles */
 .human {
     border: 1px solid green;
 }
@@ -71,16 +84,43 @@ h3 {
     border: 1px solid red;
 }
 
+.button, .input h3 {
+    border: 1px solid red;
+}
+
 .human,
 .computer {
-    padding: 10px;
-    border-radius: 20px;;
+    padding: 15px 30px;
+    border-radius: 20px;
     background-color: #3C3F41;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.human h3,
+.computer h3 {
+    color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+}
+
+.human button,
+.computer button {
+    border-radius: 10px;
+    height: 60px;
+    width: 70px;
 }
 
 .rock img,
 .paper img,
 .scissors img {
-    height: 50px;
-    width: 50px;
+    height: 25px;
+    width: auto;
+}
+
+.rock p,
+.paper p,
+.scissors p {
+    margin: 0;
 }
