@@ -12,6 +12,7 @@ html {
 /* Interface Positioning */
 body {
     background-color: #3C3F41;
+    font-family: 'Comic Sans MS', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,20 +49,12 @@ body {
     border: 2px solid blue;
 }
 
-.interface {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-
-    border: 2px solid firebrick;
-}
-
 .score {
     border: 2px solid red;
     display: flex;
 }
 
-.input {
+.interface {
     border: 2px solid blue;
     display: flex;
     justify-content: center;
@@ -76,11 +69,11 @@ body {
 
 
 /* Input Section Styles */
-.human {
+.human .input {
     border: 1px solid green;
 }
 
-.computer {
+.computer .input {
     border: 1px solid red;
 }
 
@@ -88,8 +81,8 @@ body {
     border: 1px solid red;
 }
 
-.human,
-.computer {
+.human .input,
+.computer .input {
     padding: 15px 30px;
     border-radius: 20px;
     background-color: #3C3F41;
@@ -98,15 +91,22 @@ body {
     gap: 10px;
 }
 
-.human h3,
-.computer h3 {
+.human .input h2,
+.computer .input h2 {
     color: #f4f4f4;
     text-align: center;
     margin: 0;
 }
 
-.human button,
-.computer button {
+.human .input p,
+.computer .input p {
+    color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+}
+
+.human .input button,
+.computer .input button {
     border-radius: 10px;
     height: 60px;
     width: 70px;
@@ -115,12 +115,6 @@ body {
 .rock img,
 .paper img,
 .scissors img {
-    height: 25px;
+    height: 30px;
     width: auto;
-}
-
-.rock p,
-.paper p,
-.scissors p {
-    margin: 0;
 }
