@@ -7,7 +7,6 @@ let playerSelection;                           // The choice of the player in ea
 let computerPoints = 0;                        // The total score of the computer
 let playerPoints = 0;                          // The total score of the player
 let round = 1;                                 // Current round of the game
-let play = 'yes';                              // A variable to check if the game should continue or not
 const options = ['rock', 'paper', 'scissors']; // Array containing possible game options
 
 
@@ -34,15 +33,58 @@ function dramaticIntroduction() {
                 " wisely... The game of Rock, Paper, Scissors begins NOW!");
 }
 
-// This function randomly returns the choice of the computer (either 'rock', 'paper', or 'scissors').
-let getComputerChoice = () => options[Math.floor(Math.random() * 3)]; // Random number between 0, 1, or 2
+// Event listeners are set up here for the rock, paper, scissors buttons
+function setUpEventListeners() {
+    document.querySelector(".human .rock").addEventListener("click", () => {
+        console.log("rock");
+        playRound("rock");
+    });
+    document.querySelector(".human .paper").addEventListener("click", () => {
+        console.log("paper");
+        playRound("paper");
+    });
+    document.querySelector(".human .scissors").addEventListener("click", () => {
+        console.log("scissors");
+        playRound("scissors");
+    });
+}
 
-// This function prompts the player for their choice (either 'rock', 'paper', or 'scissors').
-let getPlayerChoice = () => prompt("Choose your weapon!").toLowerCase();
+// This function represents a single round of the game. 
+// It gets the choices from the player and computer and determines the winner.
+function playRound(choice) {
+    console.log(`ROUND ${round}`);
+    ++round;
+
+    playerSelection = choice;
+    computerSelection = options[Math.floor(Math.random() * 3)]; // Random number between 0, 1, or 2
+
+    choiceComparison(playerSelection, computerSelection); // Compare the selection of the computer & human
+
+    // If the player or the computer has reached 5 points, declare the winner and ask if the player wants to play again.
+    // If the player wants to play again, reset the points.
+    if (playerPoints === 5) {
+        console.log("Victory! You've proven yourself as the ultimate champion, outsmarting the" + 
+                    " machine in a thrilling contest of Rock, Paper, Scissors. The world cheers" +
+                    " for its hero!");
+    
+        round = 1;
+        playerPoints = 0;
+        computerPoints = 0;
+    }
+    else if (computerPoints === 5) {
+        console.log("Defeat... The machine has claimed victory this time. But remember, true" + 
+                    " champions are not defined by their victories, but by how they can recover" +
+                    " when they fall. The world awaits your triumphant return!");
+
+        round = 1;
+        playerPoints = 0;
+        computerPoints = 0;
+    }
+}
 
 // This function determines if the player has won, lost, or tied in a round.
 // It also updates the score accordingly and displays the current score.
-function game(playerSelection, computerSelection) {
+function choiceComparison(playerSelection, computerSelection) {
     let win = "Against all odds, you've triumphed over the machine!";
     let loss = "Alas, the machine has bested you this time."
     let tie = "A tie! The tension is palpable as both competitors prove their mettle.";
@@ -105,70 +147,10 @@ function game(playerSelection, computerSelection) {
     console.log(`Score:\nPlayer: ${playerPoints}  Computer: ${computerPoints}`);
 }
 
-// This function represents a single round of the game. 
-// It gets the choices from the player and computer and determines the winner.
-function playRound() {
-    console.log(`ROUND ${round}`);
-    ++round;
-
-    playerSelection = getPlayerChoice();
-    computerSelection = getComputerChoice();
-
-    game(playerSelection, computerSelection);
-}
-
-// This function asks the player if they want to play another game after a game has finished.
-// It returns the player's answer.
-function playAgain() {
-    let newGame;
-
-    newGame = prompt("Warrior, your battle was fierce and memorable. Will you return to the arena" + 
-                  " for another round of Rock, Paper, Scissors? Type 'Yes' to continue, or" + 
-                  "'No' to retire. The choice is yours.").toLowerCase();
-
-    if (newGame === 'yes') {
-        console.log("Excellent! Your courage is commendable. Prepare yourself, the next round" + 
-                    " of Rock, Paper, Scissors begins now!");
-    }
-    else {
-        console.log("Your decision is respected, warrior. Rest and rejuvenate. The world of Rock," +
-                    " Paper, Scissors will await your return.");
-    }
-
-    return newGame;
-}
-
-
-// Game Loop
+// Game Start
 // ---------------------------------------------------------------------------------------------
-// The game loop is where the game actually starts and keeps running until the game finishes.
-
-/*
-dramaticIntroduction();
-
-// If the player wants to continue, and no one has reached 5 points, continue the game.
-while (play === 'yes') {
-    while ((playerPoints < 5) && (computerPoints < 5)) {
-        playRound();
-    }
-    
-    // If the player or the computer has reached 5 points, declare the winner and ask if the player wants to play again.
-    // If the player wants to play again, reset the points.
-    if (playerPoints === 5) {
-        console.log("Victory! You've proven yourself as the ultimate champion, outsmarting the" + 
-                    " machine in a thrilling contest of Rock, Paper, Scissors. The world cheers" +
-                    " for its hero!");
-    }
-    else {
-        console.log("Defeat... The machine has claimed victory this time. But remember, true" + 
-                    " champions are not defined by their victories, but by how they can recover" +
-                    " when they fall. The world awaits your triumphant return!");
-    }
-
-    round = 1;
-    playerPoints = 0;
-    computerPoints = 0;
-
-    play = playAgain();
-}
-*/
+// Start the game when the DOM is fully loaded
+window.addEventListener("DOMContentLoaded", () => {
+    dramaticIntroduction();
+    setUpEventListeners();
+});
